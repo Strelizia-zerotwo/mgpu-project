@@ -1,0 +1,18 @@
+UTC: 2026-09-20T16:16:59Z
+Project: /home/only/projects/mgpu-project
+Simulator: /home/only/projects/mgpu-project/external/triosim
+Trace: /home/only/projects/mgpu-project/external/triosim/sample_trace/trace2-h100-bs128/vgg13
+go version go1.27.1 linux/amd64
+{
+	"GOARCH": "amd64",
+	"GOOS": "linux",
+	"GOPROXY": "https://goproxy.cn,direct",
+	"GOSUMDB": "sum.golang.org"
+}
+Project commit and working tree status (local changes are not captured by the commit):
+c38bdc4585e8b87cea97288d647d09e383c4e0f8
+ M README.md
+?? docs/
+?? experiments/
+?? external/
+?? runs/

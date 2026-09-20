@@ -1,0 +1,3 @@
+25414d414e52afd0bd4a7678a9276507a15ae35716faaab99faaf7b2c7699fff  /home/only/projects/mgpu-project/external/triosim/sample_trace/trace2-h100-bs128/vgg13/trace.csv
+c0a694aabfe95cdf41feb6fa08186dd72c558170753235b9bc8d10ea1b4373e4  /home/only/projects/mgpu-project/external/triosim/sample_trace/trace2-h100-bs128/vgg13/tensor.csv
+9f6b32ed85a7a559e907c518f3d76c5815e6050a6a71e5562d205f57662a28dc  /home/only/projects/mgpu-project/runs/triosim-baseline/20260921-001659-2MxYyy/triosim

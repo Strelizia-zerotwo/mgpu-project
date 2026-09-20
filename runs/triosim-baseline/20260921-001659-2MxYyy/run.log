@@ -1,0 +1,1422 @@
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00011074354022988506 6.96e+11 7.7077504e+07
+0 , gpu 0, computing check at LayerIndex,0
+0 , gpu 0, computing start at LayerIndex,0
+msg fetch 1 RemotePort GPU0Port
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00011074354022988506 6.96e+11 7.7077504e+07
+0 , gpu 1, computing check at LayerIndex,0
+0 , gpu 1, computing start at LayerIndex,0
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00011074354022988506 6.96e+11 7.7077504e+07
+0 , gpu 3, computing check at LayerIndex,0
+0 , gpu 3, computing start at LayerIndex,0
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00011074354022988506 6.96e+11 7.7077504e+07
+0 , gpu 2, computing check at LayerIndex,0
+0 , gpu 2, computing start at LayerIndex,0
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.1222988505747126e-07 6.96e+11 147712
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.1222988505747126e-07 6.96e+11 147712
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.1222988505747126e-07 6.96e+11 147712
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.1222988505747126e-07 6.96e+11 147712
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005910017471264367 6.96e+11 4.11337216e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005910017471264367 6.96e+11 4.11337216e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005910017471264367 6.96e+11 4.11337216e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005910017471264367 6.96e+11 4.11337216e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.48183908045977e-07 6.96e+11 590336
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.48183908045977e-07 6.96e+11 590336
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.48183908045977e-07 6.96e+11 590336
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.48183908045977e-07 6.96e+11 590336
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00029698501149425286 6.96e+11 2.06701568e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00029698501149425286 6.96e+11 2.06701568e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00029698501149425286 6.96e+11 2.06701568e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00029698501149425286 6.96e+11 2.06701568e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.391264367816092e-06 6.96e+11 2.36032e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.391264367816092e-06 6.96e+11 2.36032e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.391264367816092e-06 6.96e+11 2.36032e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.391264367816092e-06 6.96e+11 2.36032e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00015442685057471265 6.96e+11 1.07481088e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00015442685057471265 6.96e+11 1.07481088e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00015442685057471265 6.96e+11 1.07481088e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00015442685057471265 6.96e+11 1.07481088e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.738427586206896e-05 6.96e+11 6.0819456e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.738427586206896e-05 6.96e+11 6.0819456e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.738427586206896e-05 6.96e+11 6.0819456e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 8.738427586206896e-05 6.96e+11 6.0819456e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.3562114942528736e-05 6.96e+11 9.439232e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.000609056367816092 6.96e+11 4.23903232e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.000609056367816092 6.96e+11 4.23903232e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.000609056367816092 6.96e+11 4.23903232e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.000609056367816092 6.96e+11 4.23903232e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.945747126436781e-05 6.96e+11 6.92224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.945747126436781e-05 6.96e+11 6.92224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.945747126436781e-05 6.96e+11 6.92224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.945747126436781e-05 6.96e+11 6.92224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.6559126436781608e-05 6.96e+11 1.8485152e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.6559126436781608e-05 6.96e+11 1.8485152e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.6559126436781608e-05 6.96e+11 1.8485152e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.6559126436781608e-05 6.96e+11 1.8485152e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.471264367816092e-09 6.96e+11 1024
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.471264367816092e-09 6.96e+11 1024
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.471264367816092e-09 6.96e+11 1024
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.471264367816092e-09 6.96e+11 1024
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.356436781609196e-07 6.96e+11 512008
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.356436781609196e-07 6.96e+11 512008
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.356436781609196e-07 6.96e+11 512008
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.356436781609196e-07 6.96e+11 512008
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.35632183908046e-07 6.96e+11 512000
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.35632183908046e-07 6.96e+11 512000
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.35632183908046e-07 6.96e+11 512000
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.35632183908046e-07 6.96e+11 512000
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.354022988505747e-05 6.96e+11 1.6384e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.354022988505747e-05 6.96e+11 1.6384e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.354022988505747e-05 6.96e+11 1.6384e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 2.354022988505747e-05 6.96e+11 1.6384e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.64207816091954e-05 6.96e+11 6.7108864e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.64207816091954e-05 6.96e+11 6.7108864e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.64207816091954e-05 6.96e+11 6.7108864e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 9.64207816091954e-05 6.96e+11 6.7108864e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.7664367816091954e-06 6.96e+11 2.62144e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.0131494252873564e-06 6.96e+11 2.097152e+06
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+0.002671 , gpu 3, computing done at LayerIndex,0
+0.002671 , gpu 2, computing done at LayerIndex,0
+msg fetch 96 RemotePort GPU3Port
+0.002671 , gpu 3, computing check at LayerIndex,1
+0.002671 , gpu 3, computing start at LayerIndex,1
+msg fetch 94 RemotePort GPU2Port
+0.002671 , gpu 2, computing check at LayerIndex,1
+0.002671 , gpu 2, computing start at LayerIndex,1
+0.002671 , gpu 1, computing done at LayerIndex,0
+0.002671 , gpu 0, computing done at LayerIndex,0
+msg fetch 95 RemotePort GPU1Port
+0.002671 , gpu 1, computing check at LayerIndex,1
+0.002671 , gpu 1, computing start at LayerIndex,1
+msg fetch 93 RemotePort GPU0Port
+0.002671 , gpu 0, computing check at LayerIndex,1
+0.002671 , gpu 0, computing start at LayerIndex,1
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 1.8455540229885056e-05 6.96e+11 1.2845056e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.691108045977011e-05 6.96e+11 2.5690112e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.691108045977011e-05 6.96e+11 2.5690112e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.691108045977011e-05 6.96e+11 2.5690112e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 3.691108045977011e-05 6.96e+11 2.5690112e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.382216091954022e-05 6.96e+11 5.1380224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.382216091954022e-05 6.96e+11 5.1380224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.382216091954022e-05 6.96e+11 5.1380224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 7.382216091954022e-05 6.96e+11 5.1380224e+07
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00014764432183908045 6.96e+11 1.02760448e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00014764432183908045 6.96e+11 1.02760448e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00014764432183908045 6.96e+11 1.02760448e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.00014764432183908045 6.96e+11 1.02760448e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002214664827586207 6.96e+11 1.54140672e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002214664827586207 6.96e+11 1.54140672e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002214664827586207 6.96e+11 1.54140672e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002214664827586207 6.96e+11 1.54140672e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002952886436781609 6.96e+11 2.05520896e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002952886436781609 6.96e+11 2.05520896e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002952886436781609 6.96e+11 2.05520896e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0002952886436781609 6.96e+11 2.05520896e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+0.0037540000000000004 , gpu 0, computing done at LayerIndex,1
+0.0037540000000000004 , gpu 1, computing done at LayerIndex,1
+msg fetch 124 RemotePort GPU0Port
+0.0037540000000000004 , gpu 0, computing check at LayerIndex,2
+0.0037540000000000004 , gpu 0, computing start at LayerIndex,2
+msg fetch 123 RemotePort GPU1Port
+0.0037540000000000004 , gpu 1, computing check at LayerIndex,2
+0.0037540000000000004 , gpu 1, computing start at LayerIndex,2
+0.0037540000000000004 , gpu 2, computing done at LayerIndex,1
+0.0037540000000000004 , gpu 3, computing done at LayerIndex,1
+msg fetch 121 RemotePort GPU2Port
+0.0037540000000000004 , gpu 2, computing check at LayerIndex,2
+0.0037540000000000004 , gpu 2, computing start at LayerIndex,2
+msg fetch 122 RemotePort GPU3Port
+0.0037540000000000004 , gpu 3, computing check at LayerIndex,2
+0.0037540000000000004 , gpu 3, computing start at LayerIndex,2
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0004429329655172414 6.96e+11 3.08281344e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0004429329655172414 6.96e+11 3.08281344e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0004429329655172414 6.96e+11 3.08281344e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0004429329655172414 6.96e+11 3.08281344e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0005905772873563218 6.96e+11 4.11041792e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0008858659310344828 6.96e+11 6.16562688e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0008858659310344828 6.96e+11 6.16562688e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0008858659310344828 6.96e+11 6.16562688e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0008858659310344828 6.96e+11 6.16562688e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0011811545747126436 6.96e+11 8.22083584e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+0.009646 , gpu 3, computing done at LayerIndex,2
+0.009646 , gpu 2, computing done at LayerIndex,2
+msg fetch 146 RemotePort GPU3Port
+0.009646 , gpu 3, computing check at LayerIndex,3
+0.009646 , gpu 3, computing start at LayerIndex,3
+msg fetch 148 RemotePort GPU2Port
+0.009646 , gpu 2, computing check at LayerIndex,3
+0.009646 , gpu 2, computing start at LayerIndex,3
+0.009646 , gpu 1, computing done at LayerIndex,2
+0.009646 , gpu 0, computing done at LayerIndex,2
+msg fetch 147 RemotePort GPU1Port
+0.009646 , gpu 1, computing check at LayerIndex,3
+0.009646 , gpu 1, computing start at LayerIndex,3
+msg fetch 145 RemotePort GPU0Port
+0.009646 , gpu 0, computing check at LayerIndex,3
+0.009646 , gpu 0, computing start at LayerIndex,3
+0.010727 , gpu 1, computing done at LayerIndex,3
+0.010727 , gpu 0, computing done at LayerIndex,3
+msg fetch 147 RemotePort GPU1Port
+0.010727 , gpu 1, computing check at LayerIndex,4
+0.010727 , gpu 1, computing start at LayerIndex,4
+msg fetch 145 RemotePort GPU0Port
+0.010727 , gpu 0, computing check at LayerIndex,4
+0.010727 , gpu 0, computing start at LayerIndex,4
+0.010727 , gpu 3, computing done at LayerIndex,3
+0.010727 , gpu 2, computing done at LayerIndex,3
+msg fetch 146 RemotePort GPU3Port
+0.010727 , gpu 3, computing check at LayerIndex,4
+0.010727 , gpu 3, computing start at LayerIndex,4
+msg fetch 148 RemotePort GPU2Port
+0.010727 , gpu 2, computing check at LayerIndex,4
+0.010727 , gpu 2, computing start at LayerIndex,4
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0017717318620689656 6.96e+11 1.233125376e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0017717318620689656 6.96e+11 1.233125376e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0017717318620689656 6.96e+11 1.233125376e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0017717318620689656 6.96e+11 1.233125376e+09
+0.011963 , gpu 3, computing done at LayerIndex,4
+0.011963 , gpu 1, computing done at LayerIndex,4
+0.011963 , gpu 0, computing done at LayerIndex,4
+msg fetch 149 RemotePort GPU3Port
+0.011963 , gpu 3, computing check at LayerIndex,5
+0.011963 , gpu 3, computing start at LayerIndex,5
+msg fetch 151 RemotePort GPU1Port
+0.011963 , gpu 1, computing check at LayerIndex,5
+0.011963 , gpu 1, computing start at LayerIndex,5
+msg fetch 150 RemotePort GPU0Port
+0.011963 , gpu 0, computing check at LayerIndex,5
+0.011963 , gpu 0, computing start at LayerIndex,5
+0.011963 , gpu 2, computing done at LayerIndex,4
+msg fetch 152 RemotePort GPU2Port
+0.011963 , gpu 2, computing check at LayerIndex,5
+0.011963 , gpu 2, computing start at LayerIndex,5
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.002362309149425287 6.96e+11 1.644167168e+09
+0.014176 , gpu 2, computing done at LayerIndex,5
+0.014176 , gpu 3, computing done at LayerIndex,5
+0.014176 , gpu 0, computing done at LayerIndex,5
+msg fetch 156 RemotePort GPU2Port
+0.014176 , gpu 2, computing check at LayerIndex,6
+0.014176 , gpu 2, computing start at LayerIndex,6
+msg fetch 153 RemotePort GPU3Port
+0.014176 , gpu 3, computing check at LayerIndex,6
+0.014176 , gpu 3, computing start at LayerIndex,6
+msg fetch 155 RemotePort GPU0Port
+0.014176 , gpu 0, computing check at LayerIndex,6
+0.014176 , gpu 0, computing start at LayerIndex,6
+0.014176 , gpu 1, computing done at LayerIndex,5
+msg fetch 154 RemotePort GPU1Port
+0.014176 , gpu 1, computing check at LayerIndex,6
+0.014176 , gpu 1, computing start at LayerIndex,6
+0.014716 , gpu 3, computing done at LayerIndex,6
+0.014716 , gpu 1, computing done at LayerIndex,6
+msg fetch 153 RemotePort GPU3Port
+0.014716 , gpu 3, computing check at LayerIndex,7
+0.014716 , gpu 3, computing start at LayerIndex,7
+msg fetch 154 RemotePort GPU1Port
+0.014716 , gpu 1, computing check at LayerIndex,7
+0.014716 , gpu 1, computing start at LayerIndex,7
+0.014716 , gpu 0, computing done at LayerIndex,6
+0.014716 , gpu 2, computing done at LayerIndex,6
+msg fetch 155 RemotePort GPU0Port
+0.014716 , gpu 0, computing check at LayerIndex,7
+0.014716 , gpu 0, computing start at LayerIndex,7
+msg fetch 156 RemotePort GPU2Port
+0.014716 , gpu 2, computing check at LayerIndex,7
+0.014716 , gpu 2, computing start at LayerIndex,7
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.004724618298850574 6.96e+11 3.288334336e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.004724618298850574 6.96e+11 3.288334336e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.004724618298850574 6.96e+11 3.288334336e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.004724618298850574 6.96e+11 3.288334336e+09
+0.017764 , gpu 0, computing done at LayerIndex,7
+0.017764 , gpu 3, computing done at LayerIndex,7
+0.017764 , gpu 1, computing done at LayerIndex,7
+msg fetch 158 RemotePort GPU0Port
+0.017764 , gpu 0, computing check at LayerIndex,8
+0.017764 , gpu 0, computing start at LayerIndex,8
+msg fetch 157 RemotePort GPU3Port
+0.017764 , gpu 3, computing check at LayerIndex,8
+0.017764 , gpu 3, computing start at LayerIndex,8
+msg fetch 159 RemotePort GPU1Port
+0.017764 , gpu 1, computing check at LayerIndex,8
+0.017764 , gpu 1, computing start at LayerIndex,8
+0.017764 , gpu 2, computing done at LayerIndex,7
+msg fetch 160 RemotePort GPU2Port
+0.017764 , gpu 2, computing check at LayerIndex,8
+0.017764 , gpu 2, computing start at LayerIndex,8
+0.018305 , gpu 3, computing done at LayerIndex,8
+0.018305 , gpu 2, computing done at LayerIndex,8
+msg fetch 157 RemotePort GPU3Port
+0.018305 , gpu 3, computing check at LayerIndex,9
+0.018305 , gpu 3, computing start at LayerIndex,9
+msg fetch 160 RemotePort GPU2Port
+0.018305 , gpu 2, computing check at LayerIndex,9
+0.018305 , gpu 2, computing start at LayerIndex,9
+0.018305 , gpu 1, computing done at LayerIndex,8
+0.018305 , gpu 0, computing done at LayerIndex,8
+msg fetch 159 RemotePort GPU1Port
+0.018305 , gpu 1, computing check at LayerIndex,9
+0.018305 , gpu 1, computing start at LayerIndex,9
+msg fetch 158 RemotePort GPU0Port
+0.018305 , gpu 0, computing check at LayerIndex,9
+0.018305 , gpu 0, computing start at LayerIndex,9
+0.01893 , gpu 1, computing done at LayerIndex,9
+0.01893 , gpu 0, computing done at LayerIndex,9
+msg fetch 159 RemotePort GPU1Port
+0.01893 , gpu 1, computing check at LayerIndex,10
+0.01893 , gpu 1, computing start at LayerIndex,10
+msg fetch 158 RemotePort GPU0Port
+0.01893 , gpu 0, computing check at LayerIndex,10
+0.01893 , gpu 0, computing start at LayerIndex,10
+0.01893 , gpu 2, computing done at LayerIndex,9
+0.01893 , gpu 3, computing done at LayerIndex,9
+msg fetch 160 RemotePort GPU2Port
+0.01893 , gpu 2, computing check at LayerIndex,10
+0.01893 , gpu 2, computing start at LayerIndex,10
+msg fetch 157 RemotePort GPU3Port
+0.01893 , gpu 3, computing check at LayerIndex,10
+0.01893 , gpu 3, computing start at LayerIndex,10
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0015292856091954023 6.96e+11 1.064382784e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0015292856091954023 6.96e+11 1.064382784e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0015292856091954023 6.96e+11 1.064382784e+09
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0015292856091954023 6.96e+11 1.064382784e+09
+0.020333 , gpu 2, computing done at LayerIndex,10
+0.020333 , gpu 1, computing done at LayerIndex,10
+0.020333 , gpu 0, computing done at LayerIndex,10
+msg fetch 163 RemotePort GPU2Port
+0.020333 , gpu 2, computing check at LayerIndex,11
+0.020333 , gpu 2, computing start at LayerIndex,11
+msg fetch 164 RemotePort GPU1Port
+0.020333 , gpu 1, computing check at LayerIndex,11
+0.020333 , gpu 1, computing start at LayerIndex,11
+msg fetch 162 RemotePort GPU0Port
+0.020333 , gpu 0, computing check at LayerIndex,11
+0.020333 , gpu 0, computing start at LayerIndex,11
+0.020333 , gpu 3, computing done at LayerIndex,10
+msg fetch 161 RemotePort GPU3Port
+0.020333 , gpu 3, computing check at LayerIndex,11
+0.020333 , gpu 3, computing start at LayerIndex,11
+0.020603 , gpu 1, computing done at LayerIndex,11
+0.020603 , gpu 3, computing done at LayerIndex,11
+msg fetch 164 RemotePort GPU1Port
+0.020603 , gpu 1, computing check at LayerIndex,12
+0.020603 , gpu 1, computing start at LayerIndex,12
+msg fetch 161 RemotePort GPU3Port
+0.020603 , gpu 3, computing check at LayerIndex,12
+0.020603 , gpu 3, computing start at LayerIndex,12
+0.020603 , gpu 0, computing done at LayerIndex,11
+0.020603 , gpu 2, computing done at LayerIndex,11
+msg fetch 162 RemotePort GPU0Port
+0.020603 , gpu 0, computing check at LayerIndex,12
+0.020603 , gpu 0, computing start at LayerIndex,12
+msg fetch 163 RemotePort GPU2Port
+0.020603 , gpu 2, computing check at LayerIndex,12
+0.020603 , gpu 2, computing start at LayerIndex,12
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+bwlink 1 6.96e+11 6.96e+11
+time for this msg data, 0.0007646428045977011 6.96e+11 5.32191392e+08
+0.022593 , gpu 3, computing done at LayerIndex,12
+0.022593 , gpu 0, computing done at LayerIndex,12
+msg fetch 169 RemotePort GPU3Port
+0.022593 , gpu 3, computing check at LayerIndex,13
+0.022593 , gpu 3, computing start at LayerIndex,13
+msg fetch 171 RemotePort GPU0Port
+0.022593 , gpu 0, computing check at LayerIndex,13
+0.022593 , gpu 0, computing start at LayerIndex,13
+0.022593 , gpu 2, computing done at LayerIndex,12
+0.022593 , gpu 1, computing done at LayerIndex,12
+msg fetch 172 RemotePort GPU2Port
+0.022593 , gpu 2, computing check at LayerIndex,13
+0.022593 , gpu 2, computing start at LayerIndex,13
+msg fetch 170 RemotePort GPU1Port
+0.022593 , gpu 1, computing check at LayerIndex,13
+0.022593 , gpu 1, computing start at LayerIndex,13
+0.022865 , gpu 1, computing done at LayerIndex,13
+0.022865 , gpu 2, computing done at LayerIndex,13
+0.022865 , gpu 1, computing check at LayerIndex,14
+0.022865 , gpu 1, computing start at LayerIndex,14
+0.022865 , gpu 2, computing check at LayerIndex,14
+0.022865 , gpu 2, computing start at LayerIndex,14
+0.022865 , gpu 3, computing done at LayerIndex,13
+0.022865 , gpu 0, computing done at LayerIndex,13
+0.022865 , gpu 3, computing check at LayerIndex,14
+0.022865 , gpu 3, computing start at LayerIndex,14
+0.022865 , gpu 0, computing check at LayerIndex,14
+0.022865 , gpu 0, computing start at LayerIndex,14
+0.02318 , gpu 3, computing done at LayerIndex,14
+0.02318 , gpu 0, computing done at LayerIndex,14
+0.02318 , gpu 3, computing check at LayerIndex,15
+0.02318 , gpu 3, computing start at LayerIndex,15
+0.02318 , gpu 0, computing check at LayerIndex,15
+0.02318 , gpu 0, computing start at LayerIndex,15
+0.02318 , gpu 1, computing done at LayerIndex,14
+0.02318 , gpu 2, computing done at LayerIndex,14
+0.02318 , gpu 1, computing check at LayerIndex,15
+0.02318 , gpu 1, computing start at LayerIndex,15
+0.02318 , gpu 2, computing check at LayerIndex,15
+0.02318 , gpu 2, computing start at LayerIndex,15
+0.024111 , gpu 1, computing done at LayerIndex,15
+0.024111 , gpu 2, computing done at LayerIndex,15
+0.024111 , gpu 1, computing check at LayerIndex,16
+0.024111 , gpu 1, computing start at LayerIndex,16
+0.024111 , gpu 2, computing check at LayerIndex,16
+0.024111 , gpu 2, computing start at LayerIndex,16
+0.024111 , gpu 3, computing done at LayerIndex,15
+0.024111 , gpu 0, computing done at LayerIndex,15
+0.024111 , gpu 3, computing check at LayerIndex,16
+0.024111 , gpu 3, computing start at LayerIndex,16
+0.024111 , gpu 0, computing check at LayerIndex,16
+0.024111 , gpu 0, computing start at LayerIndex,16
+0.024248000000000002 , gpu 3, computing done at LayerIndex,16
+0.024248000000000002 , gpu 0, computing done at LayerIndex,16
+0.024248000000000002 , gpu 3, computing check at LayerIndex,17
+0.024248000000000002 , gpu 3, computing start at LayerIndex,17
+0.024248000000000002 , gpu 0, computing check at LayerIndex,17
+0.024248000000000002 , gpu 0, computing start at LayerIndex,17
+0.024248000000000002 , gpu 1, computing done at LayerIndex,16
+0.024248000000000002 , gpu 2, computing done at LayerIndex,16
+0.024248000000000002 , gpu 1, computing check at LayerIndex,17
+0.024248000000000002 , gpu 1, computing start at LayerIndex,17
+0.024248000000000002 , gpu 2, computing check at LayerIndex,17
+0.024248000000000002 , gpu 2, computing start at LayerIndex,17
+0.025751000000000003 , gpu 1, computing done at LayerIndex,17
+0.025751000000000003 , gpu 2, computing done at LayerIndex,17
+0.025751000000000003 , gpu 1, computing check at LayerIndex,18
+0.025751000000000003 , gpu 1, computing start at LayerIndex,18
+0.025751000000000003 , gpu 2, computing check at LayerIndex,18
+0.025751000000000003 , gpu 2, computing start at LayerIndex,18
+0.025751000000000003 , gpu 3, computing done at LayerIndex,17
+0.025751000000000003 , gpu 0, computing done at LayerIndex,17
+0.025751000000000003 , gpu 3, computing check at LayerIndex,18
+0.025751000000000003 , gpu 3, computing start at LayerIndex,18
+0.025751000000000003 , gpu 0, computing check at LayerIndex,18
+0.025751000000000003 , gpu 0, computing start at LayerIndex,18
+0.025889000000000002 , gpu 3, computing done at LayerIndex,18
+0.025889000000000002 , gpu 0, computing done at LayerIndex,18
+0.025889000000000002 , gpu 3, computing check at LayerIndex,19
+0.025889000000000002 , gpu 3, computing start at LayerIndex,19
+0.025889000000000002 , gpu 0, computing check at LayerIndex,19
+0.025889000000000002 , gpu 0, computing start at LayerIndex,19
+0.025889000000000002 , gpu 1, computing done at LayerIndex,18
+0.025889000000000002 , gpu 2, computing done at LayerIndex,18
+0.025889000000000002 , gpu 1, computing check at LayerIndex,19
+0.025889000000000002 , gpu 1, computing start at LayerIndex,19
+0.025889000000000002 , gpu 2, computing check at LayerIndex,19
+0.025889000000000002 , gpu 2, computing start at LayerIndex,19
+0.026048 , gpu 1, computing done at LayerIndex,19
+0.026048 , gpu 2, computing done at LayerIndex,19
+0.026048 , gpu 1, computing check at LayerIndex,20
+0.026048 , gpu 1, computing start at LayerIndex,20
+0.026048 , gpu 2, computing check at LayerIndex,20
+0.026048 , gpu 2, computing start at LayerIndex,20
+0.026048 , gpu 3, computing done at LayerIndex,19
+0.026048 , gpu 0, computing done at LayerIndex,19
+0.026048 , gpu 3, computing check at LayerIndex,20
+0.026048 , gpu 3, computing start at LayerIndex,20
+0.026048 , gpu 0, computing check at LayerIndex,20
+0.026048 , gpu 0, computing start at LayerIndex,20
+0.026443 , gpu 3, computing done at LayerIndex,20
+0.026443 , gpu 0, computing done at LayerIndex,20
+0.026443 , gpu 3, computing check at LayerIndex,21
+0.026443 , gpu 3, computing start at LayerIndex,21
+0.026443 , gpu 0, computing check at LayerIndex,21
+0.026443 , gpu 0, computing start at LayerIndex,21
+0.026443 , gpu 1, computing done at LayerIndex,20
+0.026443 , gpu 2, computing done at LayerIndex,20
+0.026443 , gpu 1, computing check at LayerIndex,21
+0.026443 , gpu 1, computing start at LayerIndex,21
+0.026443 , gpu 2, computing check at LayerIndex,21
+0.026443 , gpu 2, computing start at LayerIndex,21
+0.026479000000000003 , gpu 1, computing done at LayerIndex,21
+0.026479000000000003 , gpu 2, computing done at LayerIndex,21
+0.026479000000000003 , gpu 1, computing check at LayerIndex,22
+0.026479000000000003 , gpu 1, computing start at LayerIndex,22
+0.026479000000000003 , gpu 2, computing check at LayerIndex,22
+0.026479000000000003 , gpu 2, computing start at LayerIndex,22
+0.026479000000000003 , gpu 3, computing done at LayerIndex,21
+0.026479000000000003 , gpu 0, computing done at LayerIndex,21
+0.026479000000000003 , gpu 3, computing check at LayerIndex,22
+0.026479000000000003 , gpu 3, computing start at LayerIndex,22
+0.026479000000000003 , gpu 0, computing check at LayerIndex,22
+0.026479000000000003 , gpu 0, computing start at LayerIndex,22
+0.026877 , gpu 3, computing done at LayerIndex,22
+0.026877 , gpu 0, computing done at LayerIndex,22
+0.026877 , gpu 3, computing check at LayerIndex,23
+0.026877 , gpu 3, computing start at LayerIndex,23
+0.026877 , gpu 0, computing check at LayerIndex,23
+0.026877 , gpu 0, computing start at LayerIndex,23
+0.026877 , gpu 1, computing done at LayerIndex,22
+0.026877 , gpu 2, computing done at LayerIndex,22
+0.026877 , gpu 1, computing check at LayerIndex,23
+0.026877 , gpu 1, computing start at LayerIndex,23
+0.026877 , gpu 2, computing check at LayerIndex,23
+0.026877 , gpu 2, computing start at LayerIndex,23
+0.026912000000000002 , gpu 1, computing done at LayerIndex,23
+0.026912000000000002 , gpu 2, computing done at LayerIndex,23
+0.026912000000000002 , gpu 1, computing check at LayerIndex,24
+0.026912000000000002 , gpu 1, computing start at LayerIndex,24
+0.026912000000000002 , gpu 2, computing check at LayerIndex,24
+0.026912000000000002 , gpu 2, computing start at LayerIndex,24
+0.026912000000000002 , gpu 3, computing done at LayerIndex,23
+0.026912000000000002 , gpu 0, computing done at LayerIndex,23
+0.026912000000000002 , gpu 3, computing check at LayerIndex,24
+0.026912000000000002 , gpu 3, computing start at LayerIndex,24
+0.026912000000000002 , gpu 0, computing check at LayerIndex,24
+0.026912000000000002 , gpu 0, computing start at LayerIndex,24
+0.026953 , gpu 3, computing done at LayerIndex,24
+0.026953 , gpu 0, computing done at LayerIndex,24
+0.026953 , gpu 3, computing check at LayerIndex,25
+0.026953 , gpu 3, computing start at LayerIndex,25
+0.026953 , gpu 0, computing check at LayerIndex,25
+0.026953 , gpu 0, computing start at LayerIndex,25
+0.026953 , gpu 1, computing done at LayerIndex,24
+0.026953 , gpu 2, computing done at LayerIndex,24
+0.026953 , gpu 1, computing check at LayerIndex,25
+0.026953 , gpu 1, computing start at LayerIndex,25
+0.026953 , gpu 2, computing check at LayerIndex,25
+0.026953 , gpu 2, computing start at LayerIndex,25
+0.027127000000000002 , gpu 1, computing done at LayerIndex,25
+0.027127000000000002 , gpu 2, computing done at LayerIndex,25
+0.027127000000000002 , gpu 1, computing check at LayerIndex,26
+0.027127000000000002 , gpu 1, computing start at LayerIndex,26
+0.027127000000000002 , gpu 2, computing check at LayerIndex,26
+0.027127000000000002 , gpu 2, computing start at LayerIndex,26
+0.027127000000000002 , gpu 3, computing done at LayerIndex,25
+0.027127000000000002 , gpu 0, computing done at LayerIndex,25
+0.027127000000000002 , gpu 3, computing check at LayerIndex,26
+0.027127000000000002 , gpu 3, computing start at LayerIndex,26
+0.027127000000000002 , gpu 0, computing check at LayerIndex,26
+0.027127000000000002 , gpu 0, computing start at LayerIndex,26
+0.027834 , gpu 3, computing done at LayerIndex,26
+0.027834 , gpu 0, computing done at LayerIndex,26
+0.027834 , gpu 3, computing check at LayerIndex,27
+0.027834 , gpu 3, computing start at LayerIndex,27
+0.027834 , gpu 0, computing check at LayerIndex,27
+0.027834 , gpu 0, computing start at LayerIndex,27
+0.027834 , gpu 1, computing done at LayerIndex,26
+0.027834 , gpu 2, computing done at LayerIndex,26
+0.027834 , gpu 1, computing check at LayerIndex,27
+0.027834 , gpu 1, computing start at LayerIndex,27
+0.027834 , gpu 2, computing check at LayerIndex,27
+0.027834 , gpu 2, computing start at LayerIndex,27
+0.027836 , gpu 1, computing done at LayerIndex,27
+0.027836 , gpu 2, computing done at LayerIndex,27
+0.027836 , gpu 1, computing check at LayerIndex,28
+0.027836 , gpu 1, computing start at LayerIndex,28
+0.027836 , gpu 2, computing check at LayerIndex,28
+0.027836 , gpu 2, computing start at LayerIndex,28
+0.027836 , gpu 3, computing done at LayerIndex,27
+0.027836 , gpu 0, computing done at LayerIndex,27
+0.027836 , gpu 3, computing check at LayerIndex,28
+0.027836 , gpu 3, computing start at LayerIndex,28
+0.027836 , gpu 0, computing check at LayerIndex,28
+0.027836 , gpu 0, computing start at LayerIndex,28
+0.027839 , gpu 3, computing done at LayerIndex,28
+0.027839 , gpu 0, computing done at LayerIndex,28
+0.027839 , gpu 3, computing check at LayerIndex,29
+0.027839 , gpu 3, computing start at LayerIndex,29
+0.027839 , gpu 0, computing check at LayerIndex,29
+0.027839 , gpu 0, computing start at LayerIndex,29
+0.027839 , gpu 1, computing done at LayerIndex,28
+0.027839 , gpu 2, computing done at LayerIndex,28
+0.027839 , gpu 1, computing check at LayerIndex,29
+0.027839 , gpu 1, computing start at LayerIndex,29
+0.027839 , gpu 2, computing check at LayerIndex,29
+0.027839 , gpu 2, computing start at LayerIndex,29
+0.028005 , gpu 1, computing done at LayerIndex,29
+0.028005 , gpu 2, computing done at LayerIndex,29
+0.028005 , gpu 1, computing check at LayerIndex,30
+0.028005 , gpu 1, computing start at LayerIndex,30
+0.028005 , gpu 2, computing check at LayerIndex,30
+0.028005 , gpu 2, computing start at LayerIndex,30
+0.028005 , gpu 3, computing done at LayerIndex,29
+0.028005 , gpu 0, computing done at LayerIndex,29
+0.028005 , gpu 3, computing check at LayerIndex,30
+0.028005 , gpu 3, computing start at LayerIndex,30
+0.028005 , gpu 0, computing check at LayerIndex,30
+0.028005 , gpu 0, computing start at LayerIndex,30
+0.028006999999999997 , gpu 3, computing done at LayerIndex,30
+0.028006999999999997 , gpu 0, computing done at LayerIndex,30
+0.028006999999999997 , gpu 3, computing check at LayerIndex,31
+0.028006999999999997 , gpu 3, computing start at LayerIndex,31
+0.028006999999999997 , gpu 0, computing check at LayerIndex,31
+0.028006999999999997 , gpu 0, computing start at LayerIndex,31
+0.028006999999999997 , gpu 1, computing done at LayerIndex,30
+0.028006999999999997 , gpu 2, computing done at LayerIndex,30
+0.028006999999999997 , gpu 1, computing check at LayerIndex,31
+0.028006999999999997 , gpu 1, computing start at LayerIndex,31
+0.028006999999999997 , gpu 2, computing check at LayerIndex,31
+0.028006999999999997 , gpu 2, computing start at LayerIndex,31
+0.028009999999999997 , gpu 1, computing done at LayerIndex,31
+0.028009999999999997 , gpu 2, computing done at LayerIndex,31
+0.028009999999999997 , gpu 1, computing check at LayerIndex,32
+0.028009999999999997 , gpu 1, computing start at LayerIndex,32
+0.028009999999999997 , gpu 2, computing check at LayerIndex,32
+0.028009999999999997 , gpu 2, computing start at LayerIndex,32
+0.028009999999999997 , gpu 3, computing done at LayerIndex,31
+0.028009999999999997 , gpu 0, computing done at LayerIndex,31
+0.028009999999999997 , gpu 3, computing check at LayerIndex,32
+0.028009999999999997 , gpu 3, computing start at LayerIndex,32
+0.028009999999999997 , gpu 0, computing check at LayerIndex,32
+0.028009999999999997 , gpu 0, computing start at LayerIndex,32
+0.028097999999999998 , gpu 3, computing done at LayerIndex,32
+0.028097999999999998 , gpu 0, computing done at LayerIndex,32
+0.028097999999999998 , gpu 3, computing check at LayerIndex,33
+0.028097999999999998 , gpu 3, computing start at LayerIndex,33
+0.028097999999999998 , gpu 0, computing check at LayerIndex,33
+0.028097999999999998 , gpu 0, computing start at LayerIndex,33
+0.028097999999999998 , gpu 1, computing done at LayerIndex,32
+0.028097999999999998 , gpu 2, computing done at LayerIndex,32
+0.028097999999999998 , gpu 1, computing check at LayerIndex,33
+0.028097999999999998 , gpu 1, computing start at LayerIndex,33
+0.028097999999999998 , gpu 2, computing check at LayerIndex,33
+0.028097999999999998 , gpu 2, computing start at LayerIndex,33
+0.028103999999999997 , gpu 1, computing done at LayerIndex,33
+0.028103999999999997 , gpu 2, computing done at LayerIndex,33
+0.028103999999999997 , gpu 1, computing check at LayerIndex,34
+0.028103999999999997 , gpu 1, computing start at LayerIndex,34
+0.028103999999999997 , gpu 2, computing check at LayerIndex,34
+0.028103999999999997 , gpu 2, computing start at LayerIndex,34
+0.028103999999999997 , gpu 3, computing done at LayerIndex,33
+0.028103999999999997 , gpu 0, computing done at LayerIndex,33
+0.028103999999999997 , gpu 3, computing check at LayerIndex,34
+0.028103999999999997 , gpu 3, computing start at LayerIndex,34
+0.028103999999999997 , gpu 0, computing check at LayerIndex,34
+0.028103999999999997 , gpu 0, computing start at LayerIndex,34
+0.028104999999999998 , gpu 3, computing done at LayerIndex,34
+0.028104999999999998 , gpu 0, computing done at LayerIndex,34
+0.028104999999999998 , gpu 3, computing check at LayerIndex,35
+0.028104999999999998 , gpu 3, computing start at LayerIndex,35
+0.028104999999999998 , gpu 0, computing check at LayerIndex,35
+0.028104999999999998 , gpu 0, computing start at LayerIndex,35
+0.028104999999999998 , gpu 1, computing done at LayerIndex,34
+0.028104999999999998 , gpu 2, computing done at LayerIndex,34
+0.028104999999999998 , gpu 1, computing check at LayerIndex,35
+0.028104999999999998 , gpu 1, computing start at LayerIndex,35
+0.028104999999999998 , gpu 2, computing check at LayerIndex,35
+0.028104999999999998 , gpu 2, computing start at LayerIndex,35
+0.028107999999999998 , gpu 1, computing done at LayerIndex,35
+0.028107999999999998 , gpu 2, computing done at LayerIndex,35
+0.028107999999999998 , gpu 1, computing check at LayerIndex,36
+0.028107999999999998 , gpu 1, computing start at LayerIndex,36
+0.028107999999999998 , gpu 2, computing check at LayerIndex,36
+0.028107999999999998 , gpu 2, computing start at LayerIndex,36
+0.028107999999999998 , gpu 3, computing done at LayerIndex,35
+0.028107999999999998 , gpu 0, computing done at LayerIndex,35
+0.028107999999999998 , gpu 3, computing check at LayerIndex,36
+0.028107999999999998 , gpu 3, computing start at LayerIndex,36
+0.028107999999999998 , gpu 0, computing check at LayerIndex,36
+0.028107999999999998 , gpu 0, computing start at LayerIndex,36
+0.028110999999999997 , gpu 3, computing done at LayerIndex,36
+0.028110999999999997 , gpu 0, computing done at LayerIndex,36
+0.028110999999999997 , gpu 3, computing check at LayerIndex,37
+0.028110999999999997 , gpu 3, computing start at LayerIndex,37
+0.028110999999999997 , gpu 0, computing check at LayerIndex,37
+0.028110999999999997 , gpu 0, computing start at LayerIndex,37
+0.028110999999999997 , gpu 1, computing done at LayerIndex,36
+0.028110999999999997 , gpu 2, computing done at LayerIndex,36
+0.028110999999999997 , gpu 1, computing check at LayerIndex,37
+0.028110999999999997 , gpu 1, computing start at LayerIndex,37
+0.028110999999999997 , gpu 2, computing check at LayerIndex,37
+0.028110999999999997 , gpu 2, computing start at LayerIndex,37
+0.028177999999999998 , gpu 1, computing done at LayerIndex,37
+0.028177999999999998 , gpu 2, computing done at LayerIndex,37
+0.028177999999999998 , gpu 1, computing check at LayerIndex,38
+0.028177999999999998 , gpu 1, computing start at LayerIndex,38
+0.028177999999999998 , gpu 2, computing check at LayerIndex,38
+0.028177999999999998 , gpu 2, computing start at LayerIndex,38
+0.028177999999999998 , gpu 3, computing done at LayerIndex,37
+0.028177999999999998 , gpu 0, computing done at LayerIndex,37
+0.028177999999999998 , gpu 3, computing check at LayerIndex,38
+0.028177999999999998 , gpu 3, computing start at LayerIndex,38
+0.028177999999999998 , gpu 0, computing check at LayerIndex,38
+0.028177999999999998 , gpu 0, computing start at LayerIndex,38
+0.028179999999999997 , gpu 3, computing done at LayerIndex,38
+0.028179999999999997 , gpu 0, computing done at LayerIndex,38
+0.028179999999999997 , gpu 3, computing check at LayerIndex,39
+0.028179999999999997 , gpu 3, computing start at LayerIndex,39
+0.028179999999999997 , gpu 0, computing check at LayerIndex,39
+0.028179999999999997 , gpu 0, computing start at LayerIndex,39
+0.028179999999999997 , gpu 1, computing done at LayerIndex,38
+0.028179999999999997 , gpu 2, computing done at LayerIndex,38
+0.028179999999999997 , gpu 1, computing check at LayerIndex,39
+0.028179999999999997 , gpu 1, computing start at LayerIndex,39
+0.028179999999999997 , gpu 2, computing check at LayerIndex,39
+0.028179999999999997 , gpu 2, computing start at LayerIndex,39
+0.028182999999999996 , gpu 1, computing done at LayerIndex,39
+0.028182999999999996 , gpu 2, computing done at LayerIndex,39
+0.028182999999999996 , gpu 1, computing check at LayerIndex,40
+0.028182999999999996 , gpu 1, computing start at LayerIndex,40
+0.028182999999999996 , gpu 2, computing check at LayerIndex,40
+0.028182999999999996 , gpu 2, computing start at LayerIndex,40
+0.028182999999999996 , gpu 3, computing done at LayerIndex,39
+0.028182999999999996 , gpu 0, computing done at LayerIndex,39
+0.028182999999999996 , gpu 3, computing check at LayerIndex,40
+0.028182999999999996 , gpu 3, computing start at LayerIndex,40
+0.028182999999999996 , gpu 0, computing check at LayerIndex,40
+0.028182999999999996 , gpu 0, computing start at LayerIndex,40
+0.028393999999999996 , gpu 3, computing done at LayerIndex,40
+0.028393999999999996 , gpu 0, computing done at LayerIndex,40
+0.028393999999999996 , gpu 3, computing check at LayerIndex,41
+0.028393999999999996 , gpu 3, computing start at LayerIndex,41
+0.028393999999999996 , gpu 0, computing check at LayerIndex,41
+0.028393999999999996 , gpu 0, computing start at LayerIndex,41
+0.028393999999999996 , gpu 1, computing done at LayerIndex,40
+0.028393999999999996 , gpu 2, computing done at LayerIndex,40
+0.028393999999999996 , gpu 1, computing check at LayerIndex,41
+0.028393999999999996 , gpu 1, computing start at LayerIndex,41
+0.028393999999999996 , gpu 2, computing check at LayerIndex,41
+0.028393999999999996 , gpu 2, computing start at LayerIndex,41
+0.028396999999999995 , gpu 1, computing done at LayerIndex,41
+0.028396999999999995 , gpu 2, computing done at LayerIndex,41
+0.028396999999999995 , gpu 1, computing check at LayerIndex,42
+0.028396999999999995 , gpu 1, computing start at LayerIndex,42
+0.028396999999999995 , gpu 2, computing check at LayerIndex,42
+0.028396999999999995 , gpu 2, computing start at LayerIndex,42
+0.028396999999999995 , gpu 3, computing done at LayerIndex,41
+0.028396999999999995 , gpu 0, computing done at LayerIndex,41
+0.028396999999999995 , gpu 3, computing check at LayerIndex,42
+0.028396999999999995 , gpu 3, computing start at LayerIndex,42
+0.028396999999999995 , gpu 0, computing check at LayerIndex,42
+0.028396999999999995 , gpu 0, computing start at LayerIndex,42
+0.028399999999999995 , gpu 3, computing done at LayerIndex,42
+0.028399999999999995 , gpu 0, computing done at LayerIndex,42
+0.028399999999999995 , gpu 3, computing check at LayerIndex,43
+0.028399999999999995 , gpu 3, computing start at LayerIndex,43
+0.028399999999999995 , gpu 0, computing check at LayerIndex,43
+0.028399999999999995 , gpu 0, computing start at LayerIndex,43
+0.028399999999999995 , gpu 1, computing done at LayerIndex,42
+0.028399999999999995 , gpu 2, computing done at LayerIndex,42
+0.028399999999999995 , gpu 1, computing check at LayerIndex,43
+0.028399999999999995 , gpu 1, computing start at LayerIndex,43
+0.028399999999999995 , gpu 2, computing check at LayerIndex,43
+0.028399999999999995 , gpu 2, computing start at LayerIndex,43
+0.029589999999999995 , gpu 1, computing done at LayerIndex,43
+0.029589999999999995 , gpu 2, computing done at LayerIndex,43
+0.029589999999999995 , gpu 1, computing check at LayerIndex,44
+0.029589999999999995 , gpu 1, computing start at LayerIndex,44
+0.029589999999999995 , gpu 2, computing check at LayerIndex,44
+0.029589999999999995 , gpu 2, computing start at LayerIndex,44
+0.029589999999999995 , gpu 3, computing done at LayerIndex,43
+0.029589999999999995 , gpu 0, computing done at LayerIndex,43
+0.029589999999999995 , gpu 3, computing check at LayerIndex,44
+0.029589999999999995 , gpu 3, computing start at LayerIndex,44
+0.029589999999999995 , gpu 0, computing check at LayerIndex,44
+0.029589999999999995 , gpu 0, computing start at LayerIndex,44
+0.029774999999999996 , gpu 3, computing done at LayerIndex,44
+0.029774999999999996 , gpu 0, computing done at LayerIndex,44
+0.029774999999999996 , gpu 3, computing check at LayerIndex,45
+0.029774999999999996 , gpu 3, computing start at LayerIndex,45
+0.029774999999999996 , gpu 0, computing check at LayerIndex,45
+0.029774999999999996 , gpu 0, computing start at LayerIndex,45
+0.029774999999999996 , gpu 1, computing done at LayerIndex,44
+0.029774999999999996 , gpu 2, computing done at LayerIndex,44
+0.029774999999999996 , gpu 1, computing check at LayerIndex,45
+0.029774999999999996 , gpu 1, computing start at LayerIndex,45
+0.029774999999999996 , gpu 2, computing check at LayerIndex,45
+0.029774999999999996 , gpu 2, computing start at LayerIndex,45
+0.029953999999999995 , gpu 1, computing done at LayerIndex,45
+0.029953999999999995 , gpu 2, computing done at LayerIndex,45
+0.029953999999999995 , gpu 1, computing check at LayerIndex,46
+0.029953999999999995 , gpu 1, computing start at LayerIndex,46
+0.029953999999999995 , gpu 2, computing check at LayerIndex,46
+0.029953999999999995 , gpu 2, computing start at LayerIndex,46
+0.029953999999999995 , gpu 3, computing done at LayerIndex,45
+0.029953999999999995 , gpu 0, computing done at LayerIndex,45
+0.029953999999999995 , gpu 3, computing check at LayerIndex,46
+0.029953999999999995 , gpu 3, computing start at LayerIndex,46
+0.029953999999999995 , gpu 0, computing check at LayerIndex,46
+0.029953999999999995 , gpu 0, computing start at LayerIndex,46
+0.030003999999999996 , gpu 3, computing done at LayerIndex,46
+0.030003999999999996 , gpu 0, computing done at LayerIndex,46
+0.030003999999999996 , gpu 3, computing check at LayerIndex,47
+0.030003999999999996 , gpu 3, computing start at LayerIndex,47
+0.030003999999999996 , gpu 0, computing check at LayerIndex,47
+0.030003999999999996 , gpu 0, computing start at LayerIndex,47
+0.030003999999999996 , gpu 1, computing done at LayerIndex,46
+0.030003999999999996 , gpu 2, computing done at LayerIndex,46
+0.030003999999999996 , gpu 1, computing check at LayerIndex,47
+0.030003999999999996 , gpu 1, computing start at LayerIndex,47
+0.030003999999999996 , gpu 2, computing check at LayerIndex,47
+0.030003999999999996 , gpu 2, computing start at LayerIndex,47
+0.031038999999999997 , gpu 1, computing done at LayerIndex,47
+0.031038999999999997 , gpu 2, computing done at LayerIndex,47
+0.031038999999999997 , gpu 1, computing check at LayerIndex,48
+0.031038999999999997 , gpu 1, computing start at LayerIndex,48
+0.031038999999999997 , gpu 2, computing check at LayerIndex,48
+0.031038999999999997 , gpu 2, computing start at LayerIndex,48
+0.031038999999999997 , gpu 3, computing done at LayerIndex,47
+0.031038999999999997 , gpu 0, computing done at LayerIndex,47
+0.031038999999999997 , gpu 3, computing check at LayerIndex,48
+0.031038999999999997 , gpu 3, computing start at LayerIndex,48
+0.031038999999999997 , gpu 0, computing check at LayerIndex,48
+0.031038999999999997 , gpu 0, computing start at LayerIndex,48
+0.031083999999999997 , gpu 3, computing done at LayerIndex,48
+0.031083999999999997 , gpu 0, computing done at LayerIndex,48
+0.031083999999999997 , gpu 3, computing check at LayerIndex,49
+0.031083999999999997 , gpu 3, computing start at LayerIndex,49
+0.031083999999999997 , gpu 0, computing check at LayerIndex,49
+0.031083999999999997 , gpu 0, computing start at LayerIndex,49
+0.031083999999999997 , gpu 1, computing done at LayerIndex,48
+0.031083999999999997 , gpu 2, computing done at LayerIndex,48
+0.031083999999999997 , gpu 1, computing check at LayerIndex,49
+0.031083999999999997 , gpu 1, computing start at LayerIndex,49
+0.031083999999999997 , gpu 2, computing check at LayerIndex,49
+0.031083999999999997 , gpu 2, computing start at LayerIndex,49
+0.032121 , gpu 1, computing done at LayerIndex,49
+0.032121 , gpu 2, computing done at LayerIndex,49
+0.032121 , gpu 1, computing check at LayerIndex,50
+0.032121 , gpu 1, computing start at LayerIndex,50
+0.032121 , gpu 2, computing check at LayerIndex,50
+0.032121 , gpu 2, computing start at LayerIndex,50
+0.032121 , gpu 3, computing done at LayerIndex,49
+0.032121 , gpu 0, computing done at LayerIndex,49
+0.032121 , gpu 3, computing check at LayerIndex,50
+0.032121 , gpu 3, computing start at LayerIndex,50
+0.032121 , gpu 0, computing check at LayerIndex,50
+0.032121 , gpu 0, computing start at LayerIndex,50
+0.032769999999999994 , gpu 3, computing done at LayerIndex,50
+0.032769999999999994 , gpu 0, computing done at LayerIndex,50
+0.032769999999999994 , gpu 3, computing check at LayerIndex,51
+0.032769999999999994 , gpu 3, computing start at LayerIndex,51
+0.032769999999999994 , gpu 0, computing check at LayerIndex,51
+0.032769999999999994 , gpu 0, computing start at LayerIndex,51
+0.032769999999999994 , gpu 1, computing done at LayerIndex,50
+0.032769999999999994 , gpu 2, computing done at LayerIndex,50
+0.032769999999999994 , gpu 1, computing check at LayerIndex,51
+0.032769999999999994 , gpu 1, computing start at LayerIndex,51
+0.032769999999999994 , gpu 2, computing check at LayerIndex,51
+0.032769999999999994 , gpu 2, computing start at LayerIndex,51
+0.03296899999999999 , gpu 1, computing done at LayerIndex,51
+0.03296899999999999 , gpu 2, computing done at LayerIndex,51
+0.03296899999999999 , gpu 1, computing check at LayerIndex,52
+0.03296899999999999 , gpu 1, computing start at LayerIndex,52
+0.03296899999999999 , gpu 2, computing check at LayerIndex,52
+0.03296899999999999 , gpu 2, computing start at LayerIndex,52
+0.03296899999999999 , gpu 3, computing done at LayerIndex,51
+0.03296899999999999 , gpu 0, computing done at LayerIndex,51
+0.03296899999999999 , gpu 3, computing check at LayerIndex,52
+0.03296899999999999 , gpu 3, computing start at LayerIndex,52
+0.03296899999999999 , gpu 0, computing check at LayerIndex,52
+0.03296899999999999 , gpu 0, computing start at LayerIndex,52
+0.03683399999999999 , gpu 3, computing done at LayerIndex,52
+0.03683399999999999 , gpu 0, computing done at LayerIndex,52
+0.03683399999999999 , gpu 3, computing check at LayerIndex,53
+0.03683399999999999 , gpu 3, computing start at LayerIndex,53
+0.03683399999999999 , gpu 0, computing check at LayerIndex,53
+0.03683399999999999 , gpu 0, computing start at LayerIndex,53
+0.03683399999999999 , gpu 1, computing done at LayerIndex,52
+0.03683399999999999 , gpu 2, computing done at LayerIndex,52
+0.03683399999999999 , gpu 1, computing check at LayerIndex,53
+0.03683399999999999 , gpu 1, computing start at LayerIndex,53
+0.03683399999999999 , gpu 2, computing check at LayerIndex,53
+0.03683399999999999 , gpu 2, computing start at LayerIndex,53
+0.03702699999999999 , gpu 1, computing done at LayerIndex,53
+0.03702699999999999 , gpu 2, computing done at LayerIndex,53
+0.03702699999999999 , gpu 1, computing check at LayerIndex,54
+0.03702699999999999 , gpu 1, computing start at LayerIndex,54
+0.03702699999999999 , gpu 2, computing check at LayerIndex,54
+0.03702699999999999 , gpu 2, computing start at LayerIndex,54
+0.03702699999999999 , gpu 3, computing done at LayerIndex,53
+0.03702699999999999 , gpu 0, computing done at LayerIndex,53
+0.03702699999999999 , gpu 3, computing check at LayerIndex,54
+0.03702699999999999 , gpu 3, computing start at LayerIndex,54
+0.03702699999999999 , gpu 0, computing check at LayerIndex,54
+0.03702699999999999 , gpu 0, computing start at LayerIndex,54
+0.03948299999999999 , gpu 3, computing done at LayerIndex,54
+0.03948299999999999 , gpu 0, computing done at LayerIndex,54
+0.03948299999999999 , gpu 3, computing check at LayerIndex,55
+0.03948299999999999 , gpu 3, computing start at LayerIndex,55
+0.03948299999999999 , gpu 0, computing check at LayerIndex,55
+0.03948299999999999 , gpu 0, computing start at LayerIndex,55
+0.03948299999999999 , gpu 1, computing done at LayerIndex,54
+0.03948299999999999 , gpu 2, computing done at LayerIndex,54
+0.03948299999999999 , gpu 1, computing check at LayerIndex,55
+0.03948299999999999 , gpu 1, computing start at LayerIndex,55
+0.03948299999999999 , gpu 2, computing check at LayerIndex,55
+0.03948299999999999 , gpu 2, computing start at LayerIndex,55
+0.04071899999999999 , gpu 1, computing done at LayerIndex,55
+0.04071899999999999 , gpu 2, computing done at LayerIndex,55
+0.04071899999999999 , gpu 1, computing check at LayerIndex,56
+0.04071899999999999 , gpu 1, computing start at LayerIndex,56
+0.04071899999999999 , gpu 2, computing check at LayerIndex,56
+0.04071899999999999 , gpu 2, computing start at LayerIndex,56
+0.04071899999999999 , gpu 3, computing done at LayerIndex,55
+0.04071899999999999 , gpu 0, computing done at LayerIndex,55
+0.04071899999999999 , gpu 3, computing check at LayerIndex,56
+0.04071899999999999 , gpu 3, computing start at LayerIndex,56
+0.04071899999999999 , gpu 0, computing check at LayerIndex,56
+0.04071899999999999 , gpu 0, computing start at LayerIndex,56
+0.04111599999999999 , gpu 3, computing done at LayerIndex,56
+0.04111599999999999 , gpu 0, computing done at LayerIndex,56
+0.04111599999999999 , gpu 3, computing check at LayerIndex,57
+0.04111599999999999 , gpu 3, computing start at LayerIndex,57
+0.04111599999999999 , gpu 0, computing check at LayerIndex,57
+0.04111599999999999 , gpu 0, computing start at LayerIndex,57
+0.04111599999999999 , gpu 1, computing done at LayerIndex,56
+0.04111599999999999 , gpu 2, computing done at LayerIndex,56
+0.04111599999999999 , gpu 1, computing check at LayerIndex,57
+0.04111599999999999 , gpu 1, computing start at LayerIndex,57
+0.04111599999999999 , gpu 2, computing check at LayerIndex,57
+0.04111599999999999 , gpu 2, computing start at LayerIndex,57
+0.04613799999999999 , gpu 1, computing done at LayerIndex,57
+0.04613799999999999 , gpu 2, computing done at LayerIndex,57
+0.04613799999999999 , gpu 1, computing check at LayerIndex,58
+0.04613799999999999 , gpu 1, computing start at LayerIndex,58
+0.04613799999999999 , gpu 2, computing check at LayerIndex,58
+0.04613799999999999 , gpu 2, computing start at LayerIndex,58
+0.04613799999999999 , gpu 3, computing done at LayerIndex,57
+0.04613799999999999 , gpu 0, computing done at LayerIndex,57
+0.04613799999999999 , gpu 3, computing check at LayerIndex,58
+0.04613799999999999 , gpu 3, computing start at LayerIndex,58
+0.04613799999999999 , gpu 0, computing check at LayerIndex,58
+0.04613799999999999 , gpu 0, computing start at LayerIndex,58
+0.046528999999999994 , gpu 3, computing done at LayerIndex,58
+0.046528999999999994 , gpu 0, computing done at LayerIndex,58
+0.046528999999999994 , gpu 3, computing check at LayerIndex,59
+0.046528999999999994 , gpu 3, computing start at LayerIndex,59
+0.046528999999999994 , gpu 0, computing check at LayerIndex,59
+0.046528999999999994 , gpu 0, computing start at LayerIndex,59
+0.046528999999999994 , gpu 1, computing done at LayerIndex,58
+0.046528999999999994 , gpu 2, computing done at LayerIndex,58
+0.046528999999999994 , gpu 1, computing check at LayerIndex,59
+0.046528999999999994 , gpu 1, computing start at LayerIndex,59
+0.046528999999999994 , gpu 2, computing check at LayerIndex,59
+0.046528999999999994 , gpu 2, computing start at LayerIndex,59
+0.049363 , gpu 1, computing done at LayerIndex,59
+0.049363 , gpu 2, computing done at LayerIndex,59
+0.049363 , gpu 1, computing check at LayerIndex,60
+0.049363 , gpu 1, computing start at LayerIndex,60
+0.049363 , gpu 2, computing check at LayerIndex,60
+0.049363 , gpu 2, computing start at LayerIndex,60
+0.049363 , gpu 3, computing done at LayerIndex,59
+0.049363 , gpu 0, computing done at LayerIndex,59
+0.049363 , gpu 3, computing check at LayerIndex,60
+0.049363 , gpu 3, computing start at LayerIndex,60
+0.049363 , gpu 0, computing check at LayerIndex,60
+0.049363 , gpu 0, computing start at LayerIndex,60
+0.051812 , gpu 3, computing done at LayerIndex,60
+0.051812 , gpu 0, computing done at LayerIndex,60
+0.051812 , gpu 3, computing check at LayerIndex,61
+0.051812 , gpu 3, computing start at LayerIndex,61
+0.051812 , gpu 0, computing check at LayerIndex,61
+0.051812 , gpu 0, computing start at LayerIndex,61
+0.051812 , gpu 1, computing done at LayerIndex,60
+0.051812 , gpu 2, computing done at LayerIndex,60
+0.051812 , gpu 1, computing check at LayerIndex,61
+0.051812 , gpu 1, computing start at LayerIndex,61
+0.051812 , gpu 2, computing check at LayerIndex,61
+0.051812 , gpu 2, computing start at LayerIndex,61
+0.052606 , gpu 1, computing done at LayerIndex,61
+0.052606 , gpu 2, computing done at LayerIndex,61
+0.052606 , gpu 1, computing check at LayerIndex,62
+0.052606 , gpu 1, computing start at LayerIndex,62
+0.052606 , gpu 2, computing check at LayerIndex,62
+0.052606 , gpu 2, computing start at LayerIndex,62
+0.052606 , gpu 3, computing done at LayerIndex,61
+0.052606 , gpu 0, computing done at LayerIndex,61
+0.052606 , gpu 3, computing check at LayerIndex,62
+0.052606 , gpu 3, computing start at LayerIndex,62
+0.052606 , gpu 0, computing check at LayerIndex,62
+0.052606 , gpu 0, computing start at LayerIndex,62
+0.061044 , gpu 3, computing done at LayerIndex,62
+0.061044 , gpu 0, computing done at LayerIndex,62
+0.061044 , gpu 3, computing check at LayerIndex,63
+0.061044 , gpu 3, computing start at LayerIndex,63
+0.061044 , gpu 0, computing check at LayerIndex,63
+0.061044 , gpu 0, computing start at LayerIndex,63
+0.061044 , gpu 1, computing done at LayerIndex,62
+0.061044 , gpu 2, computing done at LayerIndex,62
+0.061044 , gpu 1, computing check at LayerIndex,63
+0.061044 , gpu 1, computing start at LayerIndex,63
+0.061044 , gpu 2, computing check at LayerIndex,63
+0.061044 , gpu 2, computing start at LayerIndex,63
+0.061832 , gpu 1, computing done at LayerIndex,63
+0.061832 , gpu 2, computing done at LayerIndex,63
+0.061832 , gpu 1, computing check at LayerIndex,64
+0.061832 , gpu 1, computing start at LayerIndex,64
+0.061832 , gpu 2, computing check at LayerIndex,64
+0.061832 , gpu 2, computing start at LayerIndex,64
+0.061832 , gpu 3, computing done at LayerIndex,63
+0.061832 , gpu 0, computing done at LayerIndex,63
+0.061832 , gpu 3, computing check at LayerIndex,64
+0.061832 , gpu 3, computing start at LayerIndex,64
+0.061832 , gpu 0, computing check at LayerIndex,64
+0.061832 , gpu 0, computing start at LayerIndex,64
+0.066519 , gpu 3, computing done at LayerIndex,64
+0.066519 , gpu 0, computing done at LayerIndex,64
+0.066519 , gpu 3, computing check at LayerIndex,65
+0.066519 , gpu 3, computing start at LayerIndex,65
+0.066519 , gpu 0, computing check at LayerIndex,65
+0.066519 , gpu 0, computing start at LayerIndex,65
+0.066519 , gpu 1, computing done at LayerIndex,64
+0.066519 , gpu 2, computing done at LayerIndex,64
+0.066519 , gpu 1, computing check at LayerIndex,65
+0.066519 , gpu 1, computing start at LayerIndex,65
+0.066519 , gpu 2, computing check at LayerIndex,65
+0.066519 , gpu 2, computing start at LayerIndex,65
+0.07146 , gpu 1, computing done at LayerIndex,65
+0.07146 , gpu 2, computing done at LayerIndex,65
+0.07146 , gpu 1, computing check at LayerIndex,66
+0.07146 , gpu 1, computing start at LayerIndex,66
+0.07146 , gpu 2, computing check at LayerIndex,66
+0.07146 , gpu 2, computing start at LayerIndex,66
+0.07146 , gpu 3, computing done at LayerIndex,65
+0.07146 , gpu 0, computing done at LayerIndex,65
+0.07146 , gpu 3, computing check at LayerIndex,66
+0.07146 , gpu 3, computing start at LayerIndex,66
+0.07146 , gpu 0, computing check at LayerIndex,66
+0.07146 , gpu 0, computing start at LayerIndex,66
+0.073046 , gpu 3, computing done at LayerIndex,66
+0.073046 , gpu 0, computing done at LayerIndex,66
+0.073046 , gpu 3, computing check at LayerIndex,67
+0.073046 , gpu 3, computing start at LayerIndex,67
+0.073046 , gpu 0, computing check at LayerIndex,67
+0.073046 , gpu 0, computing start at LayerIndex,67
+0.073046 , gpu 1, computing done at LayerIndex,66
+0.073046 , gpu 2, computing done at LayerIndex,66
+0.073046 , gpu 1, computing check at LayerIndex,67
+0.073046 , gpu 1, computing start at LayerIndex,67
+0.073046 , gpu 2, computing check at LayerIndex,67
+0.073046 , gpu 2, computing start at LayerIndex,67
+0.086773 , gpu 1, computing done at LayerIndex,67
+0.086773 , gpu 2, computing done at LayerIndex,67
+0.086773 , gpu 1, computing check at LayerIndex,68
+0.086773 , gpu 1, computing start at LayerIndex,68
+0.086773 , gpu 2, computing check at LayerIndex,68
+0.086773 , gpu 2, computing start at LayerIndex,68
+0.086773 , gpu 3, computing done at LayerIndex,67
+0.086773 , gpu 0, computing done at LayerIndex,67
+0.086773 , gpu 3, computing check at LayerIndex,68
+0.086773 , gpu 3, computing start at LayerIndex,68
+0.086773 , gpu 0, computing check at LayerIndex,68
+0.086773 , gpu 0, computing start at LayerIndex,68
+0.088353 , gpu 3, computing done at LayerIndex,68
+0.088353 , gpu 0, computing done at LayerIndex,68
+0.088353 , gpu 3, computing check at LayerIndex,69
+0.088353 , gpu 3, computing start at LayerIndex,69
+0.088353 , gpu 0, computing check at LayerIndex,69
+0.088353 , gpu 0, computing start at LayerIndex,69
+0.088353 , gpu 1, computing done at LayerIndex,68
+0.088353 , gpu 2, computing done at LayerIndex,68
+0.088353 , gpu 1, computing check at LayerIndex,69
+0.088353 , gpu 1, computing start at LayerIndex,69
+0.088353 , gpu 2, computing check at LayerIndex,69
+0.088353 , gpu 2, computing start at LayerIndex,69
+0.09047 , gpu 1, computing done at LayerIndex,69
+0.09047 , gpu 2, computing done at LayerIndex,69
+0.09047 , gpu 1, computing check at LayerIndex,70
+0.09047 , gpu 1, computing start at LayerIndex,70
+0.09047 , gpu 2, computing check at LayerIndex,70
+0.09047 , gpu 2, computing start at LayerIndex,70
+0.09047 , gpu 3, computing done at LayerIndex,69
+0.09047 , gpu 0, computing done at LayerIndex,69
+0.09047 , gpu 3, computing check at LayerIndex,70
+0.09047 , gpu 3, computing start at LayerIndex,70
+0.09047 , gpu 0, computing check at LayerIndex,70
+0.09047 , gpu 0, computing start at LayerIndex,70
+0.091032 , gpu 3, computing done at LayerIndex,70
+0.091032 , gpu 0, computing done at LayerIndex,70
+0.091032 , gpu 3, computing check at LayerIndex,71
+0.091032 , gpu 3, computing start at LayerIndex,71
+0.091032 , gpu 0, computing check at LayerIndex,71
+0.091032 , gpu 0, computing start at LayerIndex,71
+0.091032 , gpu 1, computing done at LayerIndex,70
+0.091032 , gpu 2, computing done at LayerIndex,70
+0.091032 , gpu 1, computing check at LayerIndex,71
+0.091032 , gpu 1, computing start at LayerIndex,71
+0.091032 , gpu 2, computing check at LayerIndex,71
+0.091032 , gpu 2, computing start at LayerIndex,71
+0.091428 , gpu 1, computing done at LayerIndex,71
+0.091428 , gpu 2, computing done at LayerIndex,71
+0.091428 , gpu 1, computing check at LayerIndex,72
+0.091428 , gpu 1, computing start at LayerIndex,72
+0.091428 , gpu 2, computing check at LayerIndex,72
+0.091428 , gpu 2, computing start at LayerIndex,72
+0.091428 , gpu 3, computing done at LayerIndex,71
+0.091428 , gpu 0, computing done at LayerIndex,71
+0.091428 , gpu 3, computing check at LayerIndex,72
+0.091428 , gpu 3, computing start at LayerIndex,72
+0.091428 , gpu 0, computing check at LayerIndex,72
+0.091428 , gpu 0, computing start at LayerIndex,72
+0.092015 , gpu 3, computing done at LayerIndex,72
+0.092015 , gpu 0, computing done at LayerIndex,72
+0.092015 , gpu 3, computing check at LayerIndex,73
+0.092015 , gpu 3, computing start at LayerIndex,73
+0.092015 , gpu 0, computing check at LayerIndex,73
+0.092015 , gpu 0, computing start at LayerIndex,73
+0.092015 , gpu 1, computing done at LayerIndex,72
+0.092015 , gpu 2, computing done at LayerIndex,72
+0.092015 , gpu 1, computing check at LayerIndex,73
+0.092015 , gpu 1, computing start at LayerIndex,73
+0.092015 , gpu 2, computing check at LayerIndex,73
+0.092015 , gpu 2, computing start at LayerIndex,73
+0.092423 , gpu 1, computing done at LayerIndex,73
+0.092423 , gpu 2, computing done at LayerIndex,73
+0.092423 , gpu 1, computing check at LayerIndex,74
+0.092423 , gpu 1, computing start at LayerIndex,74
+0.092423 , gpu 2, computing check at LayerIndex,74
+0.092423 , gpu 2, computing start at LayerIndex,74
+0.092423 , gpu 3, computing done at LayerIndex,73
+0.092423 , gpu 0, computing done at LayerIndex,73
+0.092423 , gpu 3, computing check at LayerIndex,74
+0.092423 , gpu 3, computing start at LayerIndex,74
+0.092423 , gpu 0, computing check at LayerIndex,74
+0.092423 , gpu 0, computing start at LayerIndex,74
+0.092865 , gpu 3, computing done at LayerIndex,74
+0.092865 , gpu 0, computing done at LayerIndex,74
+0.092865 , gpu 3, computing check at LayerIndex,75
+0.092865 , gpu 3, computing start at LayerIndex,75
+0.092865 , gpu 0, computing check at LayerIndex,75
+0.092865 , gpu 0, computing start at LayerIndex,75
+0.092865 , gpu 1, computing done at LayerIndex,74
+0.092865 , gpu 2, computing done at LayerIndex,74
+0.092865 , gpu 1, computing check at LayerIndex,75
+0.092865 , gpu 1, computing start at LayerIndex,75
+0.092865 , gpu 2, computing check at LayerIndex,75
+0.092865 , gpu 2, computing start at LayerIndex,75
+0.093264 , gpu 1, computing done at LayerIndex,75
+0.093264 , gpu 2, computing done at LayerIndex,75
+0.093264 , gpu 1, computing check at LayerIndex,76
+0.093264 , gpu 1, computing start at LayerIndex,76
+0.093264 , gpu 2, computing check at LayerIndex,76
+0.093264 , gpu 2, computing start at LayerIndex,76
+0.093264 , gpu 3, computing done at LayerIndex,75
+0.093264 , gpu 0, computing done at LayerIndex,75
+0.093264 , gpu 3, computing check at LayerIndex,76
+0.093264 , gpu 3, computing start at LayerIndex,76
+0.093264 , gpu 0, computing check at LayerIndex,76
+0.093264 , gpu 0, computing start at LayerIndex,76
+0.094038 , gpu 3, computing done at LayerIndex,76
+0.094038 , gpu 0, computing done at LayerIndex,76
+0.094038 , gpu 2, computing done at LayerIndex,76
+0.094038 , gpu 1, computing done at LayerIndex,76
+Estimated execution time ms, 94.0380000000
+size here 1596574176
+size delete here 1064382784
+0.094038 , gpu 0 to gpu1 send chunk 0, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.094038 , gpu 1 to gpu2 send chunk 1, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.094038 , gpu 2 to gpu3 send chunk 2, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.094038 , gpu 3 to gpu0 send chunk 3, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09608488996923077 , gpu  GPU0Port to gpu  GPU1Port scatter
+0.09608488996923077 , gpu  GPU1Port to gpu  GPU2Port scatter
+0.09608488996923077 , gpu  GPU3Port to gpu  GPU0Port scatter
+0.09608488996923077 , gpu  GPU2Port to gpu  GPU3Port scatter
+0.09608488996923077 , gpu 0 to gpu1 send chunk 3, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09608488996923077 , gpu 1 to gpu2 send chunk 0, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09608488996923077 , gpu 2 to gpu3 send chunk 1, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09608488996923077 , gpu 3 to gpu0 send chunk 2, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09813177993846155 , gpu  GPU0Port to gpu  GPU1Port scatter
+0.09813177993846155 , gpu  GPU3Port to gpu  GPU0Port scatter
+0.09813177993846155 , gpu  GPU1Port to gpu  GPU2Port scatter
+0.09813177993846155 , gpu  GPU2Port to gpu  GPU3Port scatter
+0.09813177993846155 , gpu 0 to gpu1 send chunk 2, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09813177993846155 , gpu 1 to gpu2 send chunk 3, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09813177993846155 , gpu 2 to gpu3 send chunk 0, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.09813177993846155 , gpu 3 to gpu0 send chunk 1, scatter at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10017866990769232 , gpu  GPU0Port to gpu  GPU1Port scatter
+0.10017866990769232 , gpu  GPU2Port to gpu  GPU3Port scatter
+0.10017866990769232 , gpu  GPU1Port to gpu  GPU2Port scatter
+0.10017866990769232 , gpu  GPU3Port to gpu  GPU0Port scatter
+0.10017866990769232 , gpu 0 to gpu1 send chunk 1, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10017866990769232 , gpu 1 to gpu2 send chunk 2, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10017866990769232 , gpu 2 to gpu3 send chunk 3, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10017866990769232 , gpu 3 to gpu0 send chunk 0, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.1022255598769231 , gpu  GPU0Port to gpu  GPU1Port gather
+0.1022255598769231 , gpu  GPU1Port to gpu  GPU2Port gather
+0.1022255598769231 , gpu  GPU2Port to gpu  GPU3Port gather
+0.1022255598769231 , gpu  GPU3Port to gpu  GPU0Port gather
+0.1022255598769231 , gpu 0 to gpu1 send chunk 0, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.1022255598769231 , gpu 1 to gpu2 send chunk 1, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.1022255598769231 , gpu 2 to gpu3 send chunk 2, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.1022255598769231 , gpu 3 to gpu0 send chunk 3, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10427244984615387 , gpu  GPU0Port to gpu  GPU1Port gather
+0.10427244984615387 , gpu  GPU3Port to gpu  GPU0Port gather
+0.10427244984615387 , gpu  GPU1Port to gpu  GPU2Port gather
+0.10427244984615387 , gpu  GPU2Port to gpu  GPU3Port gather
+0.10427244984615387 , gpu 0 to gpu1 send chunk 3, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10427244984615387 , gpu 1 to gpu2 send chunk 0, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10427244984615387 , gpu 2 to gpu3 send chunk 1, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10427244984615387 , gpu 3 to gpu0 send chunk 2, gather at LayerIndex,76
+bwlink 1 6.5e+10 6.5e+10
+time for this msg data, 0.002046889969230769 6.5e+10 1.33047848e+08
+0.10631933981538465 , gpu  GPU0Port to gpu  GPU1Port gather
+0.10631933981538465 , gpu  GPU1Port to gpu  GPU2Port gather
+0.10631933981538465 , gpu  GPU2Port to gpu  GPU3Port gather
+0.10631933981538465 , gpu  GPU3Port to gpu  GPU0Port gather
+Current time after AllReduce stage ms, 106.3193398154
+Program Execution time: 79.499257ms

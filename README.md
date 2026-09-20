@@ -26,3 +26,18 @@
 | `experiments/` | 按实验建立子目录，保存实验目的、输入参数、配置和 `run.sh` 等运行脚本。 |
 | `runs/` | 按实验和运行编号保存原始输出，例如日志、指标数据库、实际运行命令与代码版本。同一实验的多次运行分别保存。 |
 | `results/` | 保存从原始输出中整理出的指标汇总、图表和分析结论，并记录对应的实验与运行编号。 |
+
+9.19
+更新了仓库readme，文件路径，以及40篇多gpu论文
+9.20
+更新论文
+Coarse-Grained_Duplication_First_Fine-Grained_Deduplication_Later_Duplication-Centric_Multi-GPU_Memory_Management
+readnotes于documents文件夹
+部署论文
+TrioSim A Lightweight Simulator for Large-Scale DNNWorkloads on Multi-GPU Systems
+仓库于external文件夹
+部署论文
+mgpusim
+仓库于external文件夹
+添加了一个简单的脚本
+在experiments文件夹

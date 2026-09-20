@@ -1,0 +1,3 @@
+Estimated execution time ms, 94.0380000000
+Current time after AllReduce stage ms, 106.3193398154
+Program Execution time: 79.499257ms
