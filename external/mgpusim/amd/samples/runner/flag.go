@@ -39,9 +39,13 @@ var unifiedGPUFlag = flag.String("unified-gpus", "",
 Use a format like 1,2,3,4. Cannot coexist with -gpus.`)
 var useUnifiedMemoryFlag = flag.Bool("use-unified-memory", false,
 	"Run benchmark with Unified Memory or not")
-var reportAll = flag.Bool("report-all", false, "Report all metrics to .csv file.")
+var idealLocalPageTableFlag = flag.Bool("ideal-local-page-table", false,
+	"Use per-GPU MMUs with instant mapping propagation; preserve TLB misses and page-walk latency (timing only).")
+var mmuReportFlag = flag.Bool("report-mmu", false,
+	"Report MMU walks and page-table lookup outcomes to SQLite.")
+var reportAll = flag.Bool("report-all", false, "Report all metrics to SQLite.")
 var filenameFlag = flag.String("metric-file-name", "metrics",
-	"Modify the name of the output csv file.")
+	"Output file prefix; the recorder adds .sqlite3.")
 var magicMemoryCopy = flag.Bool("magic-memory-copy", false,
 	"Copy data from CPU directly to global memory")
 var bufferLevelTraceDirFlag = flag.String("buffer-level-trace-dir", "",

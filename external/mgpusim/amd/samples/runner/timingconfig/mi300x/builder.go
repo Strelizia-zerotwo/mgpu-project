@@ -9,7 +9,6 @@ import (
 	"github.com/sarchlab/akita/v5/mem/cache/writeback"
 	"github.com/sarchlab/akita/v5/mem/cache/writethroughcache"
 	"github.com/sarchlab/akita/v5/mem/simplebankedmemory"
-	"github.com/sarchlab/akita/v5/mem/vm/mmu"
 	"github.com/sarchlab/akita/v5/mem/vm/tlb"
 	"github.com/sarchlab/akita/v5/messaging"
 	"github.com/sarchlab/akita/v5/modeling"
@@ -88,7 +87,7 @@ type Builder struct {
 	memAddrOffset                  uint64
 	dramSize                       uint64
 	globalStorage                  *mem.Storage
-	mmu                            *mmu.Comp
+	mmu                            messaging.Component
 	rdmaAddressMapper              mem.AddressToPortMapper
 	driverPort                     messaging.RemotePort
 
@@ -239,7 +238,7 @@ func (b Builder) WithDramSize(size uint64) Builder {
 }
 
 // WithMMU sets the MMU that can provide the ultimate address translation.
-func (b Builder) WithMMU(mmu *mmu.Comp) Builder {
+func (b Builder) WithMMU(mmu messaging.Component) Builder {
 	b.mmu = mmu
 	return b
 }

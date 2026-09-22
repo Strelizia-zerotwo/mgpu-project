@@ -44,6 +44,10 @@ type Runner struct {
 // Init initializes the platform simulate
 func (r *Runner) Init() *Runner {
 	r.parseFlag()
+	r.validateFaultFlags()
+	if !r.Timing && (*idealLocalPageTableFlag || *mmuReportFlag) {
+		panic("-ideal-local-page-table and -report-mmu require -timing")
+	}
 
 	log.SetFlags(log.Llongfile | log.Ldate | log.Ltime)
 
@@ -107,6 +111,14 @@ func (r *Runner) buildTimingPlatform() {
 		WithSimulation(r.simulation).
 		WithNumGPUs(r.GPUIDs[len(r.GPUIDs)-1]).
 		WithGPUType(r.GPUType)
+
+	if *idealLocalPageTableFlag {
+		b = b.WithIdealLocalPageTable()
+	}
+
+	if *vmModeFlag != "shared" {
+		b = b.WithFaultVM(*vmModeFlag, faultConfigFromFlags())
+	}
 
 	if *magicMemoryCopy {
 		b = b.WithMagicMemoryCopy()

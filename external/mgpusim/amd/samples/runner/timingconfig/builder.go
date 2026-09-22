@@ -16,6 +16,8 @@ import (
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/gpubuilder"
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/mi300x"
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/r9nano"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/faultvm"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/idealmapping"
 )
 
 // Port buffer sizes. The driver port mirrors the emulation platform's
@@ -31,17 +33,20 @@ const (
 type Builder struct {
 	simulation *simulation.Simulation
 
-	numGPUs            int
-	numCUPerSA         int
-	numSAPerGPU        int
-	cpuMemSize         uint64
-	gpuMemSize         uint64
-	log2PageSize       uint64
-	useMagicMemoryCopy bool
-	gpuType            string
-	switchLatency      int // PCIe/interconnect switch latency in cycles
-	d2hCycles          int
-	h2dCycles          int
+	numGPUs             int
+	numCUPerSA          int
+	numSAPerGPU         int
+	cpuMemSize          uint64
+	gpuMemSize          uint64
+	log2PageSize        uint64
+	useMagicMemoryCopy  bool
+	gpuType             string
+	idealLocalPageTable bool
+	faultMode           string
+	faultConfig         faultvm.Config
+	switchLatency       int // PCIe/interconnect switch latency in cycles
+	d2hCycles           int
+	h2dCycles           int
 
 	globalStorage     *mem.Storage
 	rdmaAddressMapper *mem.BankedAddressPortMapper
@@ -97,6 +102,14 @@ func (b Builder) Build() *driver.Driver {
 	b.globalStorage = mem.NewStorage(
 		uint64(b.numGPUs)*b.gpuMemSize + b.cpuMemSize)
 
+	b.createRDMAAddressMapper()
+	if b.faultMode != "" {
+		return b.buildFaultPlatform()
+	}
+	if b.idealLocalPageTable {
+		return b.buildIdealLocalPlatform()
+	}
+
 	mmuComp, pageTable := b.createMMU()
 	gpuDriver := b.buildGPUDriver(pageTable)
 
@@ -141,8 +154,11 @@ func (b *Builder) adjustConfigForGPUType() {
 }
 
 func (b *Builder) createMMU() (*mmu.Comp, vm.PageTable) {
-	pageTable := vm.NewPageTable(b.log2PageSize)
+	tables := idealmapping.NewShared(b.log2PageSize)
+	return b.buildMMU("MMU", tables.View(0)), tables
+}
 
+func (b *Builder) buildMMU(name string, pageTable vm.PageTable) *mmu.Comp {
 	spec := mmu.DefaultSpec()
 	spec.Freq = 1 * timing.GHz
 	spec.Latency = 100 // v4: page walking latency
@@ -152,12 +168,12 @@ func (b *Builder) createMMU() (*mmu.Comp, vm.PageTable) {
 		WithRegistrar(b.simulation).
 		WithSpec(spec).
 		WithResources(mmu.Resources{PageTable: pageTable}).
-		Build("MMU")
+		Build(name)
 
 	b.buildPort(mmuComponent, "Top", mmuTopPortBufSize)
 	b.buildPort(mmuComponent, "Control", ctrlPortBufSize)
 
-	return mmuComponent, pageTable
+	return mmuComponent
 }
 
 func (b *Builder) buildGPUDriver(
@@ -206,11 +222,9 @@ func (b *Builder) buildPort(
 }
 
 func (b *Builder) createGPUBuilder(
-	mmuComponent *mmu.Comp,
+	mmuComponent messaging.Component,
 	gpuDriver *driver.Driver,
 ) gpubuilder.GPUBuilder {
-	b.createRDMAAddressMapper()
-
 	driverPort := gpuDriver.GetPortByName(driver.GPUPortName).AsRemote()
 
 	switch b.gpuType {
@@ -260,7 +274,9 @@ func (b *Builder) createConnection(
 		Build("InterDeviceConn")
 
 	conn.PlugIn(gpuDriver.GetPortByName(driver.GPUPortName))
-	conn.PlugIn(mmuComponent.GetPortByName("Top"))
+	if mmuComponent != nil {
+		conn.PlugIn(mmuComponent.GetPortByName("Top"))
+	}
 
 	return conn
 }

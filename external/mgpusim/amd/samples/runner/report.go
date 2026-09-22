@@ -90,6 +90,9 @@ type reporter struct {
 	simdBusyTimeTracers     []*simdBusyTimeTracer
 	cuCPITraces             []*cuCPIStackTracer
 
+	mmuTracers   []*mmuTracer
+	faultMetrics *faultMetrics
+
 	ReportInstCount            bool
 	ReportCacheLatency         bool
 	ReportCacheHitRate         bool
@@ -122,6 +125,8 @@ func (r *reporter) injectTracers(s *simulation.Simulation) {
 	r.injectRDMAEngineTracer(s)
 	r.injectDRAMTracer(s)
 	r.injectSIMDBusyTimeTracer(s)
+	r.injectMMUTracers(s)
+	r.injectFaultMetrics(s)
 }
 
 func (r *reporter) injectKernelTimeTracer(s *simulation.Simulation) {
@@ -384,6 +389,8 @@ func (r *reporter) report() {
 	r.reportTLBHitRate()
 	r.reportRDMATransactionCount()
 	r.reportDRAMTransactionCount()
+	r.reportMMU()
+	r.reportFaultMetrics()
 }
 
 func (r *reporter) reportKernelTime() {
