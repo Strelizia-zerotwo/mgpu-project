@@ -4,11 +4,13 @@ import (
 	"github.com/sarchlab/akita/v5/simulation"
 	"github.com/sarchlab/akita/v5/timing"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/faultvm"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
 )
 
 type faultMetrics struct {
 	gpus  []*faultvm.GPU
 	hosts []*faultvm.Host
+	l3s   []*sectortlb.Comp
 }
 
 func (r *reporter) injectFaultMetrics(s *simulation.Simulation) {
@@ -17,6 +19,8 @@ func (r *reporter) injectFaultMetrics(s *simulation.Simulation) {
 		switch c := comp.(type) {
 		case *faultvm.GPU:
 			r.faultMetrics.gpus = append(r.faultMetrics.gpus, c)
+		case *sectortlb.Comp:
+			r.faultMetrics.l3s = append(r.faultMetrics.l3s, c)
 		case *faultvm.Host:
 			r.faultMetrics.hosts = append(r.faultMetrics.hosts, c)
 		}
@@ -40,6 +44,9 @@ func (r *reporter) reportFaultMetrics() {
 	}
 	for _, gpu := range r.faultMetrics.gpus {
 		r.reportFaultGPU(gpu)
+	}
+	for _, l3 := range r.faultMetrics.l3s {
+		r.reportL3(l3)
 	}
 	for _, host := range r.faultMetrics.hosts {
 		r.reportFaultHost(host)

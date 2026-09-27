@@ -11,6 +11,7 @@ import (
 	"github.com/sarchlab/akita/v5/tracing"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cu"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/rdma"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
 )
 
 const (
@@ -257,6 +258,9 @@ func (r *reporter) injectTLBHitRateTracer(s *simulation.Simulation) {
 	}
 
 	for _, comp := range s.Components() {
+		if _, sector := comp.(*sectortlb.Comp); sector {
+			continue
+		} // Report raw L3 counters, including zero activity.
 		if strings.Contains(comp.Name(), "TLB") {
 			tracer := tracing.NewTagCountTracer(
 				func(task tracing.TaskStart) bool { return true })

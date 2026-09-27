@@ -7,7 +7,8 @@ import (
 )
 
 var vmModeFlag = flag.String("vm-mode", "shared",
-	"Translation model: shared (legacy), demand (local mapping faults), ideal (matched no-fault model).")
+	"Translation model: shared (legacy), demand (local mapping faults), "+
+		"ideal (matched no-fault model), demand-l3 (demand plus per-GPU sector L3 TLB).")
 var vmLocalCycles = flag.Int("vm-local-walk-cycles", 100, "Local page-walk service cycles at 1 GHz.")
 var vmLocalWalkers = flag.Int("vm-local-walkers", 8, "Concurrent walkers per GPU in demand/ideal mode.")
 var vmSlots = flag.Int("vm-transaction-slots", 64, "Outstanding page translations per GPU in demand/ideal mode.")
@@ -26,16 +27,17 @@ func faultConfigFromFlags() faultvm.Config {
 }
 
 func (r *Runner) validateFaultFlags() {
+	validateL3Flags()
 	switch *vmModeFlag {
 	case "shared":
 		flag.Visit(func(f *flag.Flag) {
 			if len(f.Name) > 3 && f.Name[:3] == "vm-" && f.Name != "vm-mode" {
-				panic("VM timing parameters require -vm-mode=demand or -vm-mode=ideal")
+				panic("VM timing parameters require -vm-mode=demand, ideal, or demand-l3")
 			}
 		})
-	case "demand", "ideal":
+	case "demand", "ideal", "demand-l3":
 		if !r.Timing {
-			panic("-vm-mode=demand/ideal requires -timing")
+			panic("-vm-mode=demand/ideal/demand-l3 requires -timing")
 		}
 		if *idealLocalPageTableFlag {
 			panic("use -vm-mode=ideal without -ideal-local-page-table")
@@ -45,6 +47,6 @@ func (r *Runner) validateFaultFlags() {
 		}
 		faultConfigFromFlags().Validate()
 	default:
-		panic("unknown -vm-mode; expected shared, demand, or ideal")
+		panic("unknown -vm-mode; expected shared, demand, ideal, or demand-l3")
 	}
 }

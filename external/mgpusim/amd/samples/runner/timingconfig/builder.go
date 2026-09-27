@@ -18,6 +18,7 @@ import (
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/r9nano"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/faultvm"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/idealmapping"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
 )
 
 // Port buffer sizes. The driver port mirrors the emulation platform's
@@ -44,6 +45,7 @@ type Builder struct {
 	idealLocalPageTable bool
 	faultMode           string
 	faultConfig         faultvm.Config
+	l3Config            sectortlb.Config
 	switchLatency       int // PCIe/interconnect switch latency in cycles
 	d2hCycles           int
 	h2dCycles           int

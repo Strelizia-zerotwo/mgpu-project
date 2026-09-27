@@ -23,6 +23,7 @@ import (
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cp"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cu"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/rdma"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
 )
 
 // MI300X hardware configuration constants.
@@ -422,6 +423,9 @@ func (b *Builder) connectCPWithTLBs() {
 
 	for _, l2TLB := range b.l2TLBs {
 		addTLB(l2TLB)
+	}
+	if l3, ok := b.mmu.(*sectortlb.Comp); ok {
+		addTLB(l3)
 	}
 }
 

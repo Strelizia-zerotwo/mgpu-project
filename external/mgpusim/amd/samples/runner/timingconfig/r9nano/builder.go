@@ -20,6 +20,7 @@ import (
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cp"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cu"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/rdma"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
 )
 
 // Port buffer sizes. The CP and DMA-to-CP ports mirror the v4 4096-deep
@@ -346,6 +347,9 @@ func (b *Builder) connectCPWithTLBs() {
 	for _, l2TLB := range b.l2TLBs {
 		addTLB(l2TLB)
 	}
+	if l3, ok := b.mmu.(*sectortlb.Comp); ok {
+		addTLB(l3)
+	}
 }
 
 func (b *Builder) connectCPWithCaches() {
@@ -475,7 +479,7 @@ func (b *Builder) buildL2Caches() {
 	spec := writeback.DefaultSpec()
 	spec.Freq = b.freq
 	spec.Log2BlockSize = b.log2CacheLineSize
-	spec.WayAssociativity = 16
+	spec.WayAssociativity = 8
 	spec.TotalByteSize = byteSize
 	spec.NumMSHREntry = 64
 	spec.NumReqPerCycle = 16

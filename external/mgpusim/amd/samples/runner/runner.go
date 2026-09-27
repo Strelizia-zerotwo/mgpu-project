@@ -118,6 +118,9 @@ func (r *Runner) buildTimingPlatform() {
 
 	if *vmModeFlag != "shared" {
 		b = b.WithFaultVM(*vmModeFlag, faultConfigFromFlags())
+		if *vmModeFlag == "demand-l3" {
+			b = b.WithL3TLB(l3ConfigFromFlags())
+		}
 	}
 
 	if *magicMemoryCopy {
