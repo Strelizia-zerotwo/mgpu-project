@@ -1,5 +1,7 @@
 # 2026-09-29：WSL 目录统一与验证
 
+> 2026-09-30 后续更新：下述 SC 停滞已定位为官方旧驱动也存在的拷贝／刷新完成顺序缺陷，并已修复。SC 62×62、126×126 的四 GPU UVM + L3 运行现已通过；详情见 [SC 修复记录](../original/README.md)。以下保留当时的诊断记录。
+
 环境：Windows 通过 `wsl.exe -d only -u only` 直接执行，发行版 `only` 为 WSL2，Linux 内核 `6.6.87.2-microsoft-standard-WSL2`。
 源码：`/home/only/projects/mgpu-project/external/mgpusim`，Git HEAD `b543a92a74bb14fc08fac8d1aaa43eb6359f8042`，Go `1.27.1`。
 
