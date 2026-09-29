@@ -1,5 +1,7 @@
 # 从当前 MGPUSim 到 LIBRA 配置的四 GPU 实验
 
+> 2026-09-29 路径更新：新的 L3 TLB 运行入口统一在项目根目录的 `benchmark/l3 tlb/`，结果在 `results/l3 tlb/<应用>/`。请优先使用该目录的 `README.md` 和 `VALIDATION.md`；下文的旧运行命令与环境状态作为历史说明保留。第四版现已接入 L3，但不代表本文中全部论文配置与 DNN 适配均已完成。
+
 本教程依据 2026-09-27 对虚拟机源码的只读检查。源码位于 `/home/only/projects/mgpu-project/external/mgpusim`，当时 Git HEAD 为 `7c09be3d28637f87b0f343bee844a54de159b932`，检查前工作区干净。本轮没有修改模拟器或应用源码，也没有启动新的应用模拟。新增的说明和结果读取工具放在 `experiments/libra-baseline-guide/`。
 
 目标是四个模拟 GPU，使用 LIBRA 的表 III 配置与表 IV 中的 DNN 应用，输出每 GPU 的 L3 TLB 命中率。先前已完成的是固定数据位置的映射缺页基线；**四 GPU DNN + UVM + 三级 TLB 版本尚未实现，不能靠下面的入门命令直接得到目标实验。**

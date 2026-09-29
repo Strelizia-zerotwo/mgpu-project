@@ -1,0 +1,25 @@
+{
+  "common": {
+    "timing": true,
+    "gpu": "r9nano",
+    "arch": "gcn3",
+    "gpus": "1,2,3,4",
+    "use-unified-memory": true,
+    "vm-mode": "demand-l3",
+    "l3-tlb-entries": 1024,
+    "l3-tlb-ways": 8,
+    "l3-tlb-subentries": 16,
+    "l3-tlb-latency": 40,
+    "verify": true,
+    "report-all": true,
+    "disable-rtm": true
+  },
+  "apps": {
+    "fir": {"sample": "fir", "options": {"length": 4096, "taps": 16}},
+    "sc": {"sample": "simpleconvolution", "options": {"width": 62, "height": 62, "mask-size": 3}},
+    "mm": {"sample": "matrixmultiplication", "options": {"x": 128, "y": 128, "z": 128}},
+    "mt": {"sample": "matrixtranspose", "options": {"width": 256}},
+    "bs": {"sample": "bitonicsort", "options": {"length": 1024, "order-asc": true}},
+    "km": {"sample": "kmeans", "options": {"points": 1024, "features": 32, "clusters": 5, "max-iter": 5}}
+  }
+}
