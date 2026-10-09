@@ -17,6 +17,7 @@ import (
 	"github.com/sarchlab/akita/v5/timing"
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/gpubuilder"
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/shaderarray"
+	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/tlbprofile"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cp"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cu"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/rdma"
@@ -64,7 +65,8 @@ type Builder struct {
 	dmaEngine          *cp.DMAComp
 	sas                []*shaderarray.ShaderArray
 	l2Caches           []*writeback.Comp
-	l2TLBs             []*tlb.Comp
+	l2TLBs             []messaging.Component
+	tlbProfile         string
 	drams              []messaging.Component
 	internalConn       *directconnection.Comp
 	l2ToDramConnection *directconnection.Comp
@@ -465,6 +467,9 @@ func (b *Builder) buildSAs() {
 		WithL1AddressMapper(b.l1AddressMapper).
 		WithL1TLBAddressMapper(b.l1TLBAddressMapper)
 
+	if b.tlbProfile == tlbprofile.PaperCapacity {
+		saBuilder = saBuilder.WithPaperTLBCapacity()
+	}
 	for i := 0; i < b.numShaderArray; i++ {
 		saName := fmt.Sprintf("%s.SA[%d]", b.name, i)
 		sa := saBuilder.Build(saName)
@@ -668,6 +673,14 @@ func (b *Builder) buildCP() {
 }
 
 func (b *Builder) buildL2TLB() {
+	if b.tlbProfile == tlbprofile.PaperCapacity {
+		l2 := sectortlb.Build(b.simulation, b.name+".L2TLB",
+			sectortlb.MakeSpec(tlbprofile.L2(), b.mmu.GetPortByName("Top").AsRemote(), b.log2PageSize))
+		b.l2TLBs = append(b.l2TLBs, l2)
+		b.l1TLBAddressMapper.Port = l2.GetPortByName("Top").AsRemote()
+		return
+	}
+
 	numWays := 64
 
 	spec := tlb.DefaultSpec()
@@ -695,4 +708,11 @@ func (b *Builder) buildL2TLB() {
 	b.l2TLBs = append(b.l2TLBs, l2TLB)
 
 	b.l1TLBAddressMapper.Port = l2TLB.GetPortByName("Top").AsRemote()
+}
+
+// WithTLBProfile selects capacity/timing presets while retaining AMD sharing.
+func (b Builder) WithTLBProfile(profile string) Builder {
+	tlbprofile.Validate(profile)
+	b.tlbProfile = profile
+	return b
 }

@@ -16,6 +16,7 @@ import (
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/gpubuilder"
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/mi300x"
 	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/r9nano"
+	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/tlbprofile"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/faultvm"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/idealmapping"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
@@ -46,6 +47,7 @@ type Builder struct {
 	faultMode           string
 	faultConfig         faultvm.Config
 	l3Config            sectortlb.Config
+	tlbProfile          string
 	switchLatency       int // PCIe/interconnect switch latency in cycles
 	d2hCycles           int
 	h2dCycles           int
@@ -98,6 +100,10 @@ func (b Builder) WithGPUType(gpuType string) Builder {
 // Build builds the hardware platform and returns the driver. The driver, the
 // GPUs, and all the connections register themselves with the simulation.
 func (b Builder) Build() *driver.Driver {
+	tlbprofile.Validate(b.tlbProfile)
+	if b.tlbProfile == tlbprofile.PaperCapacity && b.gpuType != "r9nano" {
+		panic("libra-capacity TLB profile requires r9nano")
+	}
 	b.adjustConfigForGPUType()
 	b.cpuGPUMemSizeMustEqual()
 
@@ -239,6 +245,7 @@ func (b *Builder) createGPUBuilder(
 			WithDriverPort(driverPort)
 	default:
 		return r9nano.MakeBuilder().
+			WithTLBProfile(b.tlbProfile).
 			WithSimulation(b.simulation).
 			WithMMU(mmuComponent).
 			WithLog2PageSize(b.log2PageSize).
@@ -327,4 +334,11 @@ func (b *Builder) configRDMAEngine(
 	b.rdmaAddressMapper.LowModules = append(
 		b.rdmaAddressMapper.LowModules,
 		gpu.RDMADataPort.AsRemote())
+}
+
+// WithTLBProfile selects L1/L2 geometry independently of the VM mode.
+func (b Builder) WithTLBProfile(profile string) Builder {
+	tlbprofile.Validate(profile)
+	b.tlbProfile = profile
+	return b
 }

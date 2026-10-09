@@ -30,6 +30,7 @@ def help_text():
     print("Defaults: config.json. Use -key=value or -key value to override them.")
     print("Outputs: results/l3 tlb/APP/TIMESTAMP_INPUT/; APP/latest -> last successful run")
     print("This runner requires timing, UVM, demand-l3, verification and full reporting.")
+    print("TLB default: libra-capacity (paper capacities/latencies, AMD sharing); -tlb-profile=legacy restores old L1/L2.")
 
 
 def value_text(value):
@@ -140,6 +141,9 @@ def main():
     gpus = [int(x) for x in options["gpus"].split(",")]
     if not gpus or min(gpus) < 1 or len(set(gpus)) != len(gpus):
         raise ValueError("gpus must be unique positive GPU IDs")
+    profile = options.get("tlb-profile", "legacy")
+    if profile not in ("legacy", "libra-capacity"):
+        raise ValueError("tlb-profile must be legacy or libra-capacity")
     gpu_list = ",".join(map(str, gpus))
     options["gpus"] = gpu_list
     go = shutil.which("go")
@@ -153,7 +157,7 @@ def main():
         if not path.exists():
             raise RuntimeError(f"Required source/tool missing: {path}")
     parent = RESULTS / app
-    run = new_run(parent, input_label(app, options))
+    run = new_run(parent, input_label(app, options) + "_" + profile)
     print(f"Result directory: {run}", flush=True)
     binary = run / app_config["sample"]
     command = [str(binary)] + [f"-{key}={value}" for key, value in options.items()]
@@ -180,12 +184,15 @@ def main():
         with binary.open("rb") as binary_file:
             metadata["binary_sha256"] = hashlib.file_digest(binary_file, "sha256").hexdigest()
         run_logged(command, run, run / "run.log", env)
-        for level in ("L2", "L3"):
+        for level in ("L1", "L2", "L3"):
             run_logged([sys.executable, str(report), str(run / "metrics.sqlite3"),
                         "--level", level, "--gpus", gpu_list], run,
                        run / f"{level.lower()}-hit-rate.txt", env)
         run_logged([sys.executable, str(checker), str(run / "metrics.sqlite3"),
                     "--gpus", gpu_list], run, run / "check.log", env)
+        run_logged([sys.executable, str(HERE / "check_tlb_profile.py"),
+                    str(run / "metrics.sqlite3"), "--profile", profile, "--gpus", gpu_list],
+                   run, run / "tlb-config-check.txt", env)
         latest = parent / "latest"
         if latest.exists() and not latest.is_symlink():
             raise RuntimeError(f"Refusing to replace non-symlink: {latest}")

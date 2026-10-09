@@ -1,10 +1,20 @@
 package runner
 
-import "github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
+import (
+	"strings"
 
-// L3 counters are reported even without -report-all and even when zero. This
+	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
+)
+
+// Sector TLB counters are reported even without -report-all and even when zero. This
 // makes missing/inactive GPUs distinguishable from absent instrumentation.
-func (r *reporter) reportL3(c *sectortlb.Comp) {
+func (r *reporter) reportSectorTLB(c *sectortlb.Comp) {
+	prefix := "l3_"
+	if strings.Contains(c.Name(), ".L1") {
+		prefix = "l1_"
+	} else if strings.Contains(c.Name(), ".L2TLB") {
+		prefix = "l2_"
+	}
 	s, spec := c.State.Stats, c.Spec()
 	put := func(name string, value float64, unit string) {
 		r.dataRecorder.InsertData(tableName, metric{Location: c.Name(), What: name, Value: value, Unit: unit})
@@ -23,14 +33,14 @@ func (r *reporter) reportL3(c *sectortlb.Comp) {
 		"max_waiters": uint64(spec.MaxWaiters), "max_inflight": uint64(spec.MaxInflight),
 	}
 	for name, value := range counts {
-		put("l3_"+name, float64(value), "count")
+		put(prefix+name, float64(value), "count")
 	}
-	put("l3_page_size", float64(uint64(1)<<spec.Log2PageSize), "byte")
-	put("l3_frequency_hz", 1e9, "Hz")
-	put("l3_lookup_cycles", float64(spec.LookupCycles), "cycles")
-	put("l3_admission_blocked_cycles", float64(s.AdmissionBlockedCycles), "cycles")
-	put("l3_lookup_blocked_cycles", float64(s.LookupBlockedCycles), "cycles")
-	put("l3_response_blocked_cycles", float64(s.ResponseBlockedCycles), "cycles")
-	put("l3_translation_average", averageSeconds(s.LatencySum, s.Completed), "second")
-	put("l3_translation_max", secondsOf(s.LatencyMax), "second")
+	put(prefix+"page_size", float64(uint64(1)<<spec.Log2PageSize), "byte")
+	put(prefix+"frequency_hz", 1e9, "Hz")
+	put(prefix+"lookup_cycles", float64(spec.LookupCycles), "cycles")
+	put(prefix+"admission_blocked_cycles", float64(s.AdmissionBlockedCycles), "cycles")
+	put(prefix+"lookup_blocked_cycles", float64(s.LookupBlockedCycles), "cycles")
+	put(prefix+"response_blocked_cycles", float64(s.ResponseBlockedCycles), "cycles")
+	put(prefix+"translation_average", averageSeconds(s.LatencySum, s.Completed), "second")
+	put(prefix+"translation_max", secondsOf(s.LatencyMax), "second")
 }

@@ -51,6 +51,10 @@ require (
 
 // replace github.com/sarchlab/akita/v5 => ../../../../akita
 
+// Akita v5.0.0-beta.10 with the cache address-space-limitation fix, so L1
+// misses on another GPU's memory go through RDMA. See ../akita-patched/PATCH.md.
+replace github.com/sarchlab/akita/v5 => ../akita-patched
+
 go 1.27.0
 
 // Retained dependency-security guard: tebeka/atexit still reaches testify

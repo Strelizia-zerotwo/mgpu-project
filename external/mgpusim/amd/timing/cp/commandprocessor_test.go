@@ -197,11 +197,48 @@ var _ = Describe("CommandProcessor", func() {
 		}
 		toDriver.Deliver(req)
 
-		dispatcher.EXPECT().IsDispatching().Return(false)
+		dispatcher.EXPECT().IsDispatching().Return(false).AnyTimes()
+
+		tickUntilQuiet()
+
+		// The L1 data caches are invalidated before the kernel starts, and
+		// the request waits in the buffer meanwhile.
+		l1DataDsts := append(append([]messaging.RemotePort{},
+			cp.State.L1SCaches...), cp.State.L1VCaches...)
+		expectCtrlStep(toCaches, memcontrolprotocol.CmdDrain, l1DataDsts)
+		expectCtrlStep(toCaches, memcontrolprotocol.CmdInvalidate, l1DataDsts)
+		Expect(toDriver.PeekIncoming()).NotTo(BeNil())
+
 		dispatcher.EXPECT().StartDispatching(gomock.Any()).
 			Do(func(launched protocol.LaunchKernelReq) {
 				Expect(launched.ID).To(Equal(req.ID))
 			})
+
+		expectCtrlStep(toCaches, memcontrolprotocol.CmdEnable, l1DataDsts)
+
+		Expect(toDriver.PeekIncoming()).To(BeNil())
+		Expect(cp.State.CtrlSeq).To(Equal(ctrlSeqNone))
+		Expect(cp.State.KernelStartReqID).To(BeZero())
+	})
+
+	It("should dispatch a kernel immediately when there is no cache", func() {
+		useMockDispatcher()
+		cp.State.L1ICaches = nil
+		cp.State.L1SCaches = nil
+		cp.State.L1VCaches = nil
+		cp.State.L2Caches = nil
+
+		req := protocol.LaunchKernelReq{
+			MsgMeta: messaging.MsgMeta{
+				ID:  timing.GetIDGenerator().Generate(),
+				Src: driverPort,
+				Dst: toDriver.AsRemote(),
+			},
+		}
+		toDriver.Deliver(req)
+
+		dispatcher.EXPECT().IsDispatching().Return(false)
+		dispatcher.EXPECT().StartDispatching(gomock.Any())
 
 		madeProgress := cp.Tick()
 
@@ -320,6 +357,47 @@ var _ = Describe("CommandProcessor", func() {
 
 		rsp := toDriver.RetrieveOutgoing().(protocol.GeneralRsp)
 		Expect(rsp.RspTo).To(Equal(req.ID))
+	})
+
+	It("should answer back-to-back flush requests in order", func() {
+		var reqs []protocol.FlushReq
+		for i := 0; i < 2; i++ {
+			req := protocol.FlushReq{
+				MsgMeta: messaging.MsgMeta{
+					ID:  timing.GetIDGenerator().Generate(),
+					Src: driverPort,
+					Dst: toDriver.AsRemote(),
+				},
+			}
+			toDriver.Deliver(req)
+			reqs = append(reqs, req)
+		}
+
+		tickUntilQuiet()
+
+		// The first flush finishes when the last Enable ack arrives, which
+		// queues its response. The second flush is taken from the buffer on
+		// a later tick and must not overwrite the first request before that
+		// response has been sent.
+		for _, req := range reqs {
+			expectCtrlStep(toCaches, memcontrolprotocol.CmdDrain, l1Dsts())
+			expectCtrlStep(toCaches, memcontrolprotocol.CmdFlush, l1Dsts())
+			expectCtrlStep(toCaches, memcontrolprotocol.CmdInvalidate,
+				l1Dsts())
+			expectCtrlStep(toCaches, memcontrolprotocol.CmdDrain,
+				cp.State.L2Caches)
+			expectCtrlStep(toCaches, memcontrolprotocol.CmdFlush,
+				cp.State.L2Caches)
+			expectCtrlStep(toCaches, memcontrolprotocol.CmdInvalidate,
+				cp.State.L2Caches)
+			expectCtrlStep(toCaches, memcontrolprotocol.CmdEnable,
+				allCacheDsts())
+
+			rsp := toDriver.RetrieveOutgoing().(protocol.GeneralRsp)
+			Expect(rsp.RspTo).To(Equal(req.ID))
+			Expect(rsp.Dst).To(Equal(driverPort))
+		}
+		Expect(toDriver.RetrieveOutgoing()).To(BeNil())
 	})
 
 	It("should handle a shootdown command", func() {

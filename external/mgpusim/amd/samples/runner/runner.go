@@ -45,6 +45,7 @@ type Runner struct {
 func (r *Runner) Init() *Runner {
 	r.parseFlag()
 	r.validateFaultFlags()
+	r.validateTLBProfile()
 	if !r.Timing && (*idealLocalPageTableFlag || *mmuReportFlag) {
 		panic("-ideal-local-page-table and -report-mmu require -timing")
 	}
@@ -110,7 +111,8 @@ func (r *Runner) buildTimingPlatform() {
 	b := timingconfig.MakeBuilder().
 		WithSimulation(r.simulation).
 		WithNumGPUs(r.GPUIDs[len(r.GPUIDs)-1]).
-		WithGPUType(r.GPUType)
+		WithGPUType(r.GPUType).
+		WithTLBProfile(*tlbProfileFlag)
 
 	if *idealLocalPageTableFlag {
 		b = b.WithIdealLocalPageTable()

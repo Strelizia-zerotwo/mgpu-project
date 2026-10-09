@@ -15,7 +15,9 @@ import (
 	"github.com/sarchlab/akita/v5/simulation"
 	"github.com/sarchlab/akita/v5/timing"
 	"github.com/sarchlab/mgpusim/v5/amd/emu"
+	"github.com/sarchlab/mgpusim/v5/amd/samples/runner/timingconfig/tlbprofile"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/cu"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/sectortlb"
 )
 
 // Port buffer sizes. The CU port sizes mirror the v4 CU builder; the other
@@ -43,17 +45,17 @@ type ShaderArray struct {
 	L1VROBs   []*rob.Comp
 	L1VATs    []*addresstranslator.Comp
 	L1VCaches []*writethroughcache.Comp
-	L1VTLBs   []*tlb.Comp
+	L1VTLBs   []messaging.Component
 
 	L1SROB   *rob.Comp
 	L1SAT    *addresstranslator.Comp
 	L1SCache *writethroughcache.Comp
-	L1STLB   *tlb.Comp
+	L1STLB   messaging.Component
 
 	L1IROB   *rob.Comp
 	L1IAT    *addresstranslator.Comp
 	L1ICache *writethroughcache.Comp
-	L1ITLB   *tlb.Comp
+	L1ITLB   messaging.Component
 }
 
 // Builder builds a shader array.
@@ -85,7 +87,8 @@ type Builder struct {
 
 	sa *ShaderArray
 
-	connectionCount int
+	connectionCount  int
+	paperTLBCapacity bool
 }
 
 // MakeBuilder creates a new builder.
@@ -554,7 +557,12 @@ func (b *Builder) buildL1VAddressTranslators() {
 func (b *Builder) buildTLB(
 	name string,
 	numSets, numWays, numMSHREntry, numReqPerCycle, latency int,
-) *tlb.Comp {
+) messaging.Component {
+	if b.paperTLBCapacity {
+		lower := b.l1TLBAddressMapper.Find(0)
+		return sectortlb.Build(b.simulation, name,
+			sectortlb.MakeSpec(tlbprofile.L1(numReqPerCycle, numMSHREntry), lower, b.log2PageSize))
+	}
 	spec := tlb.DefaultSpec()
 	spec.Freq = b.freq
 	spec.NumSets = numSets
@@ -732,4 +740,11 @@ func (b *Builder) buildL1ICache() {
 		&mem.SinglePortMapper{
 			Port: b.sa.L1IAT.GetPortByName("Top").AsRemote(),
 		})
+}
+
+// WithPaperTLBCapacity makes every L1 path 16-way/16-page with a one-cycle
+// lookup. Vector TLBs remain per CU; scalar/instruction TLBs remain per SA.
+func (b Builder) WithPaperTLBCapacity() Builder {
+	b.paperTLBCapacity = true
+	return b
 }

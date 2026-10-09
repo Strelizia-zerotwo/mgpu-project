@@ -260,7 +260,7 @@ func (r *reporter) injectTLBHitRateTracer(s *simulation.Simulation) {
 	for _, comp := range s.Components() {
 		if _, sector := comp.(*sectortlb.Comp); sector {
 			continue
-		} // Report raw L3 counters, including zero activity.
+		} // Report raw sector TLB counters, including zero activity.
 		if strings.Contains(comp.Name(), "TLB") {
 			tracer := tracing.NewTagCountTracer(
 				func(task tracing.TaskStart) bool { return true })

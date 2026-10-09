@@ -12,7 +12,8 @@
     "l3-tlb-latency": 40,
     "verify": true,
     "report-all": true,
-    "disable-rtm": true
+    "disable-rtm": true,
+    "tlb-profile": "libra-capacity"
   },
   "apps": {
     "fir": {"sample": "fir", "options": {"length": 4096, "taps": 16}},

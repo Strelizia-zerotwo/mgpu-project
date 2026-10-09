@@ -8,9 +8,9 @@ import (
 )
 
 type faultMetrics struct {
-	gpus  []*faultvm.GPU
-	hosts []*faultvm.Host
-	l3s   []*sectortlb.Comp
+	gpus       []*faultvm.GPU
+	hosts      []*faultvm.Host
+	sectorTLBs []*sectortlb.Comp
 }
 
 func (r *reporter) injectFaultMetrics(s *simulation.Simulation) {
@@ -20,7 +20,7 @@ func (r *reporter) injectFaultMetrics(s *simulation.Simulation) {
 		case *faultvm.GPU:
 			r.faultMetrics.gpus = append(r.faultMetrics.gpus, c)
 		case *sectortlb.Comp:
-			r.faultMetrics.l3s = append(r.faultMetrics.l3s, c)
+			r.faultMetrics.sectorTLBs = append(r.faultMetrics.sectorTLBs, c)
 		case *faultvm.Host:
 			r.faultMetrics.hosts = append(r.faultMetrics.hosts, c)
 		}
@@ -45,8 +45,8 @@ func (r *reporter) reportFaultMetrics() {
 	for _, gpu := range r.faultMetrics.gpus {
 		r.reportFaultGPU(gpu)
 	}
-	for _, l3 := range r.faultMetrics.l3s {
-		r.reportL3(l3)
+	for _, tlb := range r.faultMetrics.sectorTLBs {
+		r.reportSectorTLB(tlb)
 	}
 	for _, host := range r.faultMetrics.hosts {
 		r.reportFaultHost(host)

@@ -41,7 +41,8 @@ cat "results/l3 tlb/fir/latest/l3-hit-rate.txt"
 cat "results/l3 tlb/sc/latest/l3-hit-rate.txt"
 ```
 
-一条运行命令自动编译、模拟、验证计算结果并读取 L2/L3 命中率。
+一条运行命令自动编译、模拟、验证计算结果并读取 L1/L2/L3 命中率。
+当前实验默认 `-tlb-profile=libra-capacity`，按论文表对齐每个实例的容量和延迟；共享组织仍为 AMD 模型。`-tlb-profile=legacy` 可恢复原有 L1/L2 配置。见 [容量与范围说明](benchmark/l3%20tlb/PAPER-TLB.md)。
 FIR 已通过 WSL 验证；SC 的驱动等待问题已修复，62×62、126×126 四 GPU UVM + L3 运行通过计算验证与 L3 计数检查。详见 [SC 原版对照与修复记录](benchmark/original/README.md)。
 详情见 [L3 TLB 使用说明](benchmark/l3%20tlb/README.md)。
 原始数据库和可执行文件默认不进入 Git；代码、配置与文档可以正常提交。

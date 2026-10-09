@@ -5,6 +5,13 @@
 
 2026-09-30 更新：已定位并修复官方旧驱动也存在的拷贝／刷新完成顺序缺陷。SC 的四 GPU UVM `62×62` 与 `126×126` 输入现已通过计算验证和 L3 计数检查，FIR 回归也通过。原版对照、根因、命令与证据见 [SC 修复记录](../original/README.md)。失败运行仍不会更新 `latest`。
 
+## 当前默认 TLB 容量
+
+2026-09-30 新增 `-tlb-profile=libra-capacity`，并设为此实验入口的默认值。
+L1 每实例 16 项、16 路、1 周期；L2 128 个主项、8 路、16 子项、10 周期；L3 默认 1024 个主项、8 路、16 子项、40 周期。
+保留 AMD 的共享组织，L2 仍每 GPU 一份，**没有实现论文的 TPC/GPC 共享结构**。详见 [容量配置说明](PAPER-TLB.md)。
+用 `-tlb-profile=legacy` 可切回原有 L1/L2，VM 模式仍为 demand-l3。
+
 ## 直接运行
 
 在 WSL 终端执行：
@@ -19,7 +26,7 @@ bash "benchmark/l3 tlb/fir.sh"
 bash "benchmark/l3 tlb/sc.sh"
 ```
 
-每条命令依次执行编译、四 GPU 时序模拟、计算正确性验证、L2/L3 统计读取和 L3 计数检查。
+每条命令依次执行编译、四 GPU 时序模拟、计算正确性验证、L1/L2/L3 统计读取、计数与实际配置检查。
 Go 优先使用 PATH 中的版本，PATH 中没有时自动使用 `/usr/local/go/bin/go`；Python 使用系统 `python3`，不需要安装 SQLite 图形软件。
 每次执行 `go build -p 2` 利用 Go 缓存更新二进制，不要求手动重编译，也不会调用全仓库构建。
 
@@ -53,8 +60,8 @@ bash "benchmark/l3 tlb/run.sh" km -points=1024 -features=32 -clusters=5 -max-ite
 ## 结果位置
 
 ```text
-/home/only/projects/mgpu-project/results/l3 tlb/fir/时间_length-4096/
-/home/only/projects/mgpu-project/results/l3 tlb/sc/时间_62x62_mask-3/
+/home/only/projects/mgpu-project/results/l3 tlb/fir/时间_length-4096_libra-capacity/
+/home/only/projects/mgpu-project/results/l3 tlb/sc/时间_62x62_mask-3_libra-capacity/
 ```
 
 查看最近一次成功运行的命中率：
@@ -63,6 +70,8 @@ bash "benchmark/l3 tlb/run.sh" km -points=1024 -features=32 -clusters=5 -max-ite
 cat "results/l3 tlb/fir/latest/l3-hit-rate.txt"
 cat "results/l3 tlb/sc/latest/l3-hit-rate.txt"
 cat "results/l3 tlb/sc/latest/l2-hit-rate.txt"
+cat "results/l3 tlb/sc/latest/l1-hit-rate.txt"
+cat "results/l3 tlb/sc/latest/tlb-config-check.txt"
 ```
 
 检查运行状态：
@@ -78,8 +87,7 @@ cat "results/l3 tlb/sc/latest/check.log"
 
 驻留映射命中率为 `hit / (hit + miss + mshr-hit)`；MSHR 合并不算已有映射命中。
 这是到达对应 TLB 的整次运行请求统计，包括经过该路径的指令和数据翻译。
-原有 L2 TLB 仍很大，小应用的 L3 为 0% 可以是正常的冷缺失行为。
-本次目录统一没有更改 TLB 容量或模拟器硬件模型。
+当前默认 L2 已改为 128 个主项，每项 16 个子项；只有 legacy 配置保留巨大的原有 L2。小应用的 L3 为 0% 仍可能是冷缺失行为，容量缩小不保证所有应用都有 L3 命中。
 
 当前第四版模拟固定数据位置的首次映射缺页，不包含完整迁移、换页和再次缺页机制，也不等于完整 LIBRA 硬件配置。
 原有组件说明与兼容工具保留在 `external/mgpusim/experiments/l3-tlb/` 和 `experiments/libra-baseline-guide/` 中；新的运行结果统一写到项目的 `results/l3 tlb/`。
