@@ -1,6 +1,7 @@
 package driver
 
 import (
+	"github.com/sarchlab/mgpusim/v5/amd/timing/memtrace"
 	"log"
 	"math"
 	"sync/atomic"
@@ -135,6 +136,8 @@ func (d *Driver) AllocateMemory(
 	byteSize uint64,
 ) Ptr {
 	ptr := d.memAllocator.Allocate(ctx.pid, byteSize, ctx.currentGPUID)
+	memtrace.Event(uint64(d.engine.CurrentTime()), "A %d %d %d",
+		ptr, byteSize, ctx.currentGPUID)
 
 	ctx.buffers = append(ctx.buffers, &buffer{
 		vAddr:   Ptr(ptr),
@@ -153,6 +156,7 @@ func (d *Driver) AllocateUnifiedMemory(
 	byteSize uint64,
 ) Ptr {
 	ptr := Ptr(d.memAllocator.AllocateUnified(ctx.pid, byteSize))
+	memtrace.Event(uint64(d.engine.CurrentTime()), "U %d %d", ptr, byteSize)
 
 	ctx.buffers = append(ctx.buffers, &buffer{
 		vAddr:   ptr,

@@ -1,0 +1,13 @@
+{
+	"Path": "github.com/sarchlab/akita/v5",
+	"Version": "v5.0.0-beta.10",
+	"Replace": {
+		"Path": "/home/only/projects/akita-529-validation-20261013/akita-beta10-backport",
+		"Dir": "/home/only/projects/akita-529-validation-20261013/akita-beta10-backport",
+		"GoMod": "/home/only/projects/akita-529-validation-20261013/akita-beta10-backport/go.mod",
+		"GoVersion": "1.26.0"
+	},
+	"Dir": "/home/only/projects/akita-529-validation-20261013/akita-beta10-backport",
+	"GoMod": "/home/only/projects/akita-529-validation-20261013/akita-beta10-backport/go.mod",
+	"GoVersion": "1.26.0"
+}

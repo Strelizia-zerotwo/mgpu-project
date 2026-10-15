@@ -1,0 +1,13 @@
+Monitoring simulation with http://localhost:32786
+2026/10/13 01:39:49 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/srad/srad.go:137: the rodinia srad benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+panic: the rodinia srad benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+
+goroutine 67 [running]:
+log.Panic({0x1874942d2768?, 0x1874942d2778?, 0x42533f?})
+	/usr/local/go/src/log/log.go:451 +0x6e
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/rodinia/srad.(*Benchmark).Run(0x1874940a6210)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/srad/srad.go:137 +0x47
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17c0168, 0x1874940a6210}, 0x187493f98760)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:180 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69

@@ -1,0 +1,10 @@
+[
+  "/home/only/projects/akita-529-validation-20261013/builds/2026-10-13_15-26-42_883601/fir-fixed-2",
+  "-timing",
+  "-verify",
+  "-disable-rtm",
+  "-gpus=1,2,3,4",
+  "-use-unified-memory",
+  "-report-all",
+  "-length=4096"
+]

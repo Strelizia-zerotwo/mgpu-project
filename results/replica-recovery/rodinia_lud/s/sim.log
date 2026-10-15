@@ -1,0 +1,13 @@
+Monitoring simulation with http://localhost:32784
+2026/10/13 01:39:49 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/lud/lud.go:133: the rodinia lud benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+panic: the rodinia lud benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+
+goroutine 67 [running]:
+log.Panic({0x23125dbfb768?, 0x23125dbfb778?, 0x42533f?})
+	/usr/local/go/src/log/log.go:451 +0x6e
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/rodinia/lud.(*Benchmark).Run(0x23125d7ec100)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/lud/lud.go:133 +0x47
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17c05b8, 0x23125d7ec100}, 0x23125d896290)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:180 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69

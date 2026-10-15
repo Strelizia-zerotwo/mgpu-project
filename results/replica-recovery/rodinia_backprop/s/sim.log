@@ -1,0 +1,13 @@
+Monitoring simulation with http://localhost:32786
+2026/10/13 01:39:50 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/backprop/backprop.go:174: the rodinia backprop benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+panic: the rodinia backprop benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+
+goroutine 56 [running]:
+log.Panic({0xce995689f68?, 0xce995689f78?, 0x42533f?})
+	/usr/local/go/src/log/log.go:451 +0x6e
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/rodinia/backprop.(*Benchmark).Run(0xce99534c180)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/backprop/backprop.go:174 +0x47
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17c1ee0, 0xce99534c180}, 0xce9951cc180)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:180 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69

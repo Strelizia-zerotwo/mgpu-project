@@ -1,0 +1,2 @@
+sim rc=0 1s 2026/10/13 01:39:48 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/shoc/spmv/spmv.go:264: Passed!
+ana rc=0 1s

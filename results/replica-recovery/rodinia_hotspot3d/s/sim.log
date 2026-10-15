@@ -1,0 +1,13 @@
+Monitoring simulation with http://localhost:32784
+2026/10/13 01:39:50 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/hotspot3d/hotspot3d.go:138: the rodinia hotspot3d benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+panic: the rodinia hotspot3d benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+
+goroutine 67 [running]:
+log.Panic({0xa50f1274768?, 0xa50f1274778?, 0x42533f?})
+	/usr/local/go/src/log/log.go:451 +0x6e
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/rodinia/hotspot3d.(*Benchmark).Run(0xa50f1348000)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/hotspot3d/hotspot3d.go:138 +0x47
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17c0280, 0xa50f1348000}, 0xa50f11ac510)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:180 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69

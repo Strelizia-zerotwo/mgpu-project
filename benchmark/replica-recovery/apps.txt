@@ -1,0 +1,25 @@
+# app tag args   (emulation, 4 unified GPUs, unified memory)
+floydwarshall s -node=256 -iter=32
+pagerank s -node=8192 -sparsity=0.001 -iterations=8
+bfs s -node=65536 -degree=8
+spmv s -dim=16384 -sparsity=0.001
+stencil2d s -row=512 -col=512 -iter=8
+polybench_jacobi2d s -size=512 -tsteps=8
+rodinia_hotspot s -size=512 -iterations=8
+rodinia_srad s -size=512 -iterations=8
+polybench_fdtd2d s -size=512 -tmax=8
+rodinia_lud s -size=512
+rodinia_gaussian s -size=256
+nw s -length=1024
+rodinia_pathfinder s -rows=64 -cols=65536
+kmeans s -points=32768 -features=32 -clusters=5 -max-iter=8
+nbody s -particles=8192 -iter=8
+bitonicsort s -length=65536
+fastwalshtransform s -length=262144
+fft s -MB=2 -passes=2
+parboil_lbm s -grid=32 -timesteps=8
+rodinia_backprop s -input=65536
+rodinia_hotspot3d s -size=128 -iterations=8
+polybench_gramschmidt s -m=256 -n=256
+polybench_mvt s -size=2048
+atax s -x=4096 -y=4096

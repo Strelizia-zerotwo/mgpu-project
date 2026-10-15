@@ -1,0 +1,20 @@
+trace trace: 134920 records, 131072 user, 3848 non-user, 0 outside kernels; 3 epochs
+user records per GPU: [32768 32768 32768 32768]
+
+== page 4.0KB: 512 pages touched ==
+GPU page-epoch reads: hit 0, cold 0 (+1024 write-first), refill 0 (0 for write)
+invalidations 0: re-read 0, never re-read 0 (0.0%)
+write page-epochs 1536 (0.0% multi-writer); remote tx in write epochs 0
+no refills
+
+== page 64.0KB: 33 pages touched ==
+GPU page-epoch reads: hit 0, cold 0 (+66 write-first), refill 0 (0 for write)
+invalidations 0: re-read 0, never re-read 0 (0.0%)
+write page-epochs 99 (6.1% multi-writer); remote tx in write epochs 768
+no refills
+
+== page 2.00MB: 2 pages touched ==
+GPU page-epoch reads: hit 0, cold 0 (+4 write-first), refill 0 (0 for write)
+invalidations 0: re-read 0, never re-read 0 (0.0%)
+write page-epochs 6 (33.3% multi-writer); remote tx in write epochs 98048
+no refills

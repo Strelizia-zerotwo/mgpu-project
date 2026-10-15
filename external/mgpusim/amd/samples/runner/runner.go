@@ -2,6 +2,7 @@
 package runner
 
 import (
+	"github.com/sarchlab/mgpusim/v5/amd/timing/memtrace"
 	"log"
 
 	// Enable profiling
@@ -201,6 +202,7 @@ func (r *Runner) Run() {
 	}
 
 	r.Driver().Terminate()
+	memtrace.Close()
 	r.simulation.Terminate()
 }
 

@@ -1,0 +1,3 @@
+Monitoring simulation with http://localhost:32776
+Number of non-zero elements 268435
+2026/10/13 01:39:48 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/shoc/spmv/spmv.go:264: Passed!

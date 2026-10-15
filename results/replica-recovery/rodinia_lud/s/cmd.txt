@@ -1,0 +1,1 @@
+rodinia_lud -size=512

@@ -8,6 +8,7 @@ import (
 	"github.com/sarchlab/akita/v5/timing"
 	"github.com/sarchlab/akita/v5/tracing"
 	"github.com/sarchlab/mgpusim/v5/amd/insts"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/memtrace"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/wavefront"
 )
 
@@ -362,6 +363,7 @@ func (u *VectorMemoryUnit) sendRequest() bool {
 		}
 
 		u.cu.vectorMemPort().Send(req)
+		u.traceTransaction(info)
 		u.postTransactionPipelineBuffer.Pop()
 		u.numTransactionInFlight--
 
@@ -397,4 +399,18 @@ func (u *VectorMemoryUnit) Flush() {
 	u.numInstInFlight = 0
 	u.numTransactionInFlight = 0
 	u.coalescingStallRemaining = 0
+}
+
+func (u *VectorMemoryUnit) traceTransaction(info VectorMemAccessInfo) {
+	if !memtrace.Enabled() {
+		return
+	}
+	loc := u.cu.traceLocation()
+	now := uint64(u.cu.CurrentTime())
+	if info.Read != nil {
+		memtrace.Read('R', loc, now, info.Read.Address, info.Read.AccessByteSize)
+	} else {
+		memtrace.Write(loc, now, info.Write.Address,
+			len(info.Write.Data), info.Write.DirtyMask)
+	}
 }

@@ -19,6 +19,7 @@ import (
 	"github.com/sarchlab/mgpusim/v5/amd/emu/cdna3"
 	"github.com/sarchlab/mgpusim/v5/amd/emu/gcn3"
 	"github.com/sarchlab/mgpusim/v5/amd/insts"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/memtrace"
 )
 
 // portBufSize is the buffer size used for the GPU-internal ports. The v4
@@ -134,12 +135,19 @@ func (b Builder) buildComputeUnit(
 	disassembler := insts.NewDisassembler()
 	disassembler.IsCDNA3 = isCDNA3
 
-	storageAccessor := emu.NewStorageAccessor(
+	var storageAccessor emu.StorageAccessor = emu.NewStorageAccessor(
 		b.storage,
 		b.pageTable,
 		b.log2PageSize,
 		nil,
 	)
+	if memtrace.Enabled() {
+		storageAccessor = &tracingAccessor{
+			inner:  storageAccessor,
+			loc:    memtrace.ParseLocation(name),
+			engine: b.simulation.GetEngine(),
+		}
+	}
 
 	var alu emu.ALU
 	if isCDNA3 {
@@ -221,4 +229,22 @@ func (b Builder) assignPort(
 	comp.AssignPort(portName, port)
 
 	return port
+}
+
+// tracingAccessor records every functional memory access for memtrace.
+type tracingAccessor struct {
+	inner  emu.StorageAccessor
+	loc    memtrace.Location
+	engine timing.Engine
+}
+
+func (a *tracingAccessor) Read(pid vm.PID, vAddr, byteSize uint64) []byte {
+	memtrace.EmuAccess('R', a.loc, uint64(a.engine.CurrentTime()), vAddr, byteSize)
+	return a.inner.Read(pid, vAddr, byteSize)
+}
+
+func (a *tracingAccessor) Write(pid vm.PID, vAddr uint64, data []byte) {
+	old := a.inner.Read(pid, vAddr, uint64(len(data)))
+	memtrace.EmuWrite(a.loc, uint64(a.engine.CurrentTime()), vAddr, old, data)
+	a.inner.Write(pid, vAddr, data)
 }

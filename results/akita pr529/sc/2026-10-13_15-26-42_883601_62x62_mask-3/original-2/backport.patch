@@ -1,0 +1,17 @@
+--- a/mem/vm/tlb/tlbmiddleware.go
++++ b/mem/vm/tlb/tlbmiddleware.go
+@@ -97,10 +97,10 @@
+ 			What:     m.comp.Name() + ".pipeline",
+ 		})
+ 
+-		// Dwell one extra cycle at stage 0 to preserve the same per-stage
+-		// latency as the original hand-coded pipeline.
+-		next.Pipeline.AcceptWithDelay(
+-			pipelineTLBReqState{Msg: msg, PipelineTaskID: pid}, 1)
++		// Backport of PR #529 admission semantics: one cycle per stage,
++		// with no extra dwell that would halve entry-lane throughput.
++		next.Pipeline.Accept(
++			pipelineTLBReqState{Msg: msg, PipelineTaskID: pid})
+ 
+ 		madeProgress = true
+ 	}

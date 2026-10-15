@@ -1,0 +1,32 @@
+{
+  "app": "sc",
+  "variant": "fixed-1",
+  "output": "/home/only/projects/mgpu-project/results/akita pr529/sc/2026-10-13_15-26-42_883601_62x62_mask-3/fixed-1",
+  "gpus": {
+    "1": {
+      "vector_l1_components": 64,
+      "latency_stages": 1,
+      "kernel_seconds": 6.912e-06,
+      "vector_l1_requests": 790.0
+    },
+    "2": {
+      "vector_l1_components": 64,
+      "latency_stages": 1,
+      "kernel_seconds": 7.371e-06,
+      "vector_l1_requests": 787.0
+    },
+    "3": {
+      "vector_l1_components": 64,
+      "latency_stages": 1,
+      "kernel_seconds": 7.3729999999999995e-06,
+      "vector_l1_requests": 790.0
+    },
+    "4": {
+      "vector_l1_components": 64,
+      "latency_stages": 1,
+      "kernel_seconds": 7.336e-06,
+      "vector_l1_requests": 601.0
+    }
+  },
+  "scope": "beta.10 TLB admission backport; not a full MGPUSim run against PR #529"
+}

@@ -1,0 +1,362 @@
+{
+ "epochs": 19,
+ "records": 1574888,
+ "results": [
+  {
+   "cold_read": 631,
+   "cold_write": 653,
+   "dirty_fraction": {
+    "128": {
+     "hist": [
+      0,
+      100,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.03125,
+     "p90": 0.03125
+    },
+    "32": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.0078125,
+     "p90": 0.0078125
+    },
+    "4096": {
+     "hist": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      100
+     ],
+     "mean_extents": 1,
+     "p50": 1,
+     "p90": 1
+    },
+    "512": {
+     "hist": [
+      0,
+      0,
+      0,
+      100,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.125,
+     "p90": 0.125
+    }
+   },
+   "grans": [
+    32,
+    128,
+    512,
+    4096
+   ],
+   "inv_refill_bytes": 53248,
+   "invalidations": 7,
+   "merged_hist": [
+    100,
+    0,
+    0,
+    0,
+    0
+   ],
+   "merged_mean": 1,
+   "multi_writer_page_epochs": 0,
+   "never_reused": 1,
+   "page": 4096,
+   "pages_touched": 642,
+   "read_hit": 2119,
+   "reads_per_refill_mean": 0,
+   "reads_per_refill_p50": 0,
+   "refills": 13,
+   "refills_for_write": 13,
+   "remote_tx_write_epochs": 0,
+   "retain_refill_bytes": [
+    416,
+    1664,
+    6656,
+    53248
+   ],
+   "reuse_dist_hist": [
+    46.15384615384615,
+    0,
+    0,
+    0,
+    0
+   ],
+   "stale_pages_avg_sum_gpus": 0.42105263157894735,
+   "stale_pages_peak_sum_gpus": 1,
+   "upd_bytes": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "upd_fill_cold": 641,
+   "upd_msgs": 0,
+   "upd_never_read_bytes": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "write_page_epochs": 1023
+  },
+  {
+   "cold_read": 36,
+   "cold_write": 46,
+   "dirty_fraction": {
+    "128": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.001953125,
+     "p90": 0.001953125
+    },
+    "32": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.00048828125,
+     "p90": 0.00048828125
+    },
+    "4096": {
+     "hist": [
+      0,
+      0,
+      100,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.0625,
+     "p90": 0.0625
+    },
+    "512": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.0078125,
+     "p90": 0.0078125
+    }
+   },
+   "grans": [
+    32,
+    128,
+    512,
+    4096
+   ],
+   "inv_refill_bytes": 917504,
+   "invalidations": 7,
+   "merged_hist": [
+    100,
+    0,
+    0,
+    0,
+    0
+   ],
+   "merged_mean": 1,
+   "multi_writer_page_epochs": 0,
+   "never_reused": 0,
+   "page": 65536,
+   "pages_touched": 41,
+   "read_hit": 189,
+   "reads_per_refill_mean": 28.142857142857142,
+   "reads_per_refill_p50": 0,
+   "refills": 14,
+   "refills_for_write": 13,
+   "remote_tx_write_epochs": 0,
+   "retain_refill_bytes": [
+    448,
+    1792,
+    7168,
+    57344
+   ],
+   "reuse_dist_hist": [
+    50,
+    0,
+    0,
+    0,
+    0
+   ],
+   "stale_pages_avg_sum_gpus": 0.3684210526315789,
+   "stale_pages_peak_sum_gpus": 1,
+   "upd_bytes": [
+    128,
+    512,
+    2048,
+    16384
+   ],
+   "upd_fill_cold": 41,
+   "upd_msgs": 4,
+   "upd_never_read_bytes": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "write_page_epochs": 92
+  },
+  {
+   "cold_read": 0,
+   "cold_write": 4,
+   "dirty_fraction": {
+    "128": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.00006103515625,
+     "p90": 0.00006103515625
+    },
+    "32": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.0000152587890625,
+     "p90": 0.0000152587890625
+    },
+    "4096": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.001953125,
+     "p90": 0.001953125
+    },
+    "512": {
+     "hist": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mean_extents": 1,
+     "p50": 0.000244140625,
+     "p90": 0.000244140625
+    }
+   },
+   "grans": [
+    32,
+    128,
+    512,
+    4096
+   ],
+   "inv_refill_bytes": 29360128,
+   "invalidations": 7,
+   "merged_hist": [
+    100,
+    0,
+    0,
+    0,
+    0
+   ],
+   "merged_mean": 1,
+   "multi_writer_page_epochs": 0,
+   "never_reused": 0,
+   "page": 2097152,
+   "pages_touched": 2,
+   "read_hit": 1,
+   "reads_per_refill_mean": 1833.4285714285713,
+   "reads_per_refill_p50": 0,
+   "refills": 14,
+   "refills_for_write": 13,
+   "remote_tx_write_epochs": 0,
+   "retain_refill_bytes": [
+    448,
+    1792,
+    7168,
+    57344
+   ],
+   "reuse_dist_hist": [
+    50,
+    0,
+    0,
+    0,
+    0
+   ],
+   "stale_pages_avg_sum_gpus": 0.3684210526315789,
+   "stale_pages_peak_sum_gpus": 1,
+   "upd_bytes": [
+    192,
+    768,
+    3072,
+    24576
+   ],
+   "upd_fill_cold": 2,
+   "upd_msgs": 6,
+   "upd_never_read_bytes": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "write_page_epochs": 26
+  }
+ ],
+ "trace": "trace",
+ "user": 1550088
+}

@@ -1,0 +1,2 @@
+sim rc=2 100s panic: Mismatch!
+ana rc=0 100s

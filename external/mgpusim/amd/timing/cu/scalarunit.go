@@ -1,6 +1,7 @@
 package cu
 
 import (
+	"github.com/sarchlab/mgpusim/v5/amd/timing/memtrace"
 	"log"
 
 	"github.com/sarchlab/akita/v5/mem/memprotocol"
@@ -273,6 +274,10 @@ func (u *ScalarUnit) sendRequest() bool {
 		}
 
 		u.cu.scalarMemPort().Send(req)
+		if memtrace.Enabled() {
+			memtrace.Read('S', u.cu.traceLocation(), uint64(u.cu.CurrentTime()),
+				req.Address, req.AccessByteSize)
+		}
 		u.readBuf = u.readBuf[1:]
 		madeProgress = true
 	}

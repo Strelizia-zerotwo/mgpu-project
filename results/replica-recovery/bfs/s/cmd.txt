@@ -1,0 +1,1 @@
+bfs -node=65536 -degree=8

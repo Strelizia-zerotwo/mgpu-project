@@ -1,0 +1,1 @@
+nbody -particles=8192 -iter=8

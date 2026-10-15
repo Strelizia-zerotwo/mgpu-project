@@ -1,6 +1,8 @@
 package driver
 
 import (
+	"encoding/binary"
+	"github.com/sarchlab/mgpusim/v5/amd/timing/memtrace"
 	"log"
 	"reflect"
 	"runtime/debug"
@@ -353,6 +355,7 @@ func (d *Driver) processCommandWithMiddleware(
 }
 
 func (d *Driver) logCmdStart(cmd Command) {
+	d.traceCmd(cmd, true)
 	tracing.StartTask(d, tracing.TaskStart{
 		ID:       cmd.GetID(),
 		ParentID: d.simulationID,
@@ -362,6 +365,7 @@ func (d *Driver) logCmdStart(cmd Command) {
 }
 
 func (d *Driver) logCmdComplete(cmd Command) {
+	d.traceCmd(cmd, false)
 	tracing.EndTask(d, tracing.TaskEnd{ID: cmd.GetID()})
 }
 
@@ -555,4 +559,29 @@ func (d *Driver) findCommandByReqID(reqID uint64) (
 	}
 
 	panic("cannot find command")
+}
+
+func (d *Driver) traceCmd(cmd Command, start bool) {
+	if !memtrace.Enabled() {
+		return
+	}
+
+	now := uint64(d.engine.CurrentTime())
+	if !start {
+		memtrace.Event(now, "E %d", cmd.GetID())
+		return
+	}
+
+	switch c := cmd.(type) {
+	case *LaunchKernelCommand:
+		memtrace.Event(now, "K %d %s", c.GetID(), c.CodeObject.Symbol.Name)
+	case *LaunchUnifiedMultiGPUKernelCommand:
+		memtrace.Event(now, "K %d %s", c.GetID(), c.CodeObject.Symbol.Name)
+	case *MemCopyH2DCommand:
+		memtrace.Event(now, "H %d %d %d", c.GetID(), c.Dst, binary.Size(c.Src))
+	case *MemCopyD2HCommand:
+		memtrace.Event(now, "D %d %d %d", c.GetID(), c.Src, binary.Size(c.Dst))
+	default:
+		memtrace.Event(now, "C %d %T", cmd.GetID(), cmd)
+	}
 }

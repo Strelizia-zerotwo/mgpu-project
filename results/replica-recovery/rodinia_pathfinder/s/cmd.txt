@@ -1,0 +1,1 @@
+rodinia_pathfinder -rows=64 -cols=65536

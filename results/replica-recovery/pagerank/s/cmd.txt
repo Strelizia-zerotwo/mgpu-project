@@ -1,0 +1,1 @@
+pagerank -node=8192 -sparsity=0.001 -iterations=8

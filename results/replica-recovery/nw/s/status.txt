@@ -1,0 +1,2 @@
+sim rc=2 2s panic: mismatch at (129,961), expected -7576, but got -10
+ana rc=0 2s

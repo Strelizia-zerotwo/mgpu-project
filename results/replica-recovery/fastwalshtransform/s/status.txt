@@ -1,0 +1,2 @@
+sim rc=0 4s 2026/10/13 01:39:52 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/amdappsdk/fastwalshtransform/fastwalshtransform.go:226: Passed!
+ana rc=0 4s

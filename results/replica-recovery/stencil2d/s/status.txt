@@ -1,0 +1,2 @@
+sim rc=0 2s 2026/10/13 01:39:50 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/shoc/stencil2d/stencil2d.go:340: Passed!
+ana rc=0 3s

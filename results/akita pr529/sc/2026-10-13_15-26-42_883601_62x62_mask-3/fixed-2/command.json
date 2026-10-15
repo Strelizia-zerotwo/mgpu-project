@@ -1,0 +1,12 @@
+[
+  "/home/only/projects/akita-529-validation-20261013/builds/2026-10-13_15-26-42_883601/sc-fixed-2",
+  "-timing",
+  "-verify",
+  "-disable-rtm",
+  "-gpus=1,2,3,4",
+  "-use-unified-memory",
+  "-report-all",
+  "-width=62",
+  "-height=62",
+  "-mask-size=3"
+]

@@ -1,0 +1,13 @@
+Monitoring simulation with http://localhost:32779
+2026/10/13 01:39:51 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/polybench/mvt/mvt.go:115: the polybench mvt benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+panic: the polybench mvt benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+
+goroutine 67 [running]:
+log.Panic({0x13f3aa113768?, 0x13f3aa113778?, 0x42533f?})
+	/usr/local/go/src/log/log.go:451 +0x6e
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/polybench/mvt.(*Benchmark).Run(0x13f3a9e5f520)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/polybench/mvt/mvt.go:115 +0x47
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17bfe18, 0x13f3a9e5f520}, 0x13f3a9bae1b0)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:180 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69

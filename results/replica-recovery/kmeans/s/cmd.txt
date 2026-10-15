@@ -1,0 +1,1 @@
+kmeans -points=32768 -features=32 -clusters=5 -max-iter=8

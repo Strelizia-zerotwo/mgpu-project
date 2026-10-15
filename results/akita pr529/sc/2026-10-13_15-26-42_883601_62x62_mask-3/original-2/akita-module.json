@@ -1,0 +1,10 @@
+{
+	"Path": "github.com/sarchlab/akita/v5",
+	"Version": "v5.0.0-beta.10",
+	"Time": "2026-08-05T12:16:37Z",
+	"Dir": "/home/only/go/pkg/mod/github.com/sarchlab/akita/v5@v5.0.0-beta.10",
+	"GoMod": "/home/only/go/pkg/mod/cache/download/github.com/sarchlab/akita/v5/@v/v5.0.0-beta.10.mod",
+	"GoVersion": "1.26.0",
+	"Sum": "h1:eaVg8DYN0LDrCeh5WkLRcXP2UjGRJarl09N+xgTmARA=",
+	"GoModSum": "h1:lpv/tSeBBx1W80ihELOsinlVKnYNrdPBisHG66SAuZI="
+}

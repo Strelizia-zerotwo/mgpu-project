@@ -1,0 +1,14 @@
+Monitoring simulation with http://localhost:32780
+2026/10/13 01:39:50 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/nw/benchmark.go:341: mismatch at (129,961), expected -7576, but got -10
+panic: mismatch at (129,961), expected -7576, but got -10
+	
+
+goroutine 67 [running]:
+log.Panicf({0xd84acc?, 0x16bf510?}, {0x3f9bfb038f38?, 0x1000?, 0x3f9bfb038f78?})
+	/usr/local/go/src/log/log.go:460 +0x74
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/rodinia/nw.(*Benchmark).Verify(0x3f9bfb1f6000)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/nw/benchmark.go:341 +0x19c
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17c20d0, 0x3f9bfb1f6000}, 0x3f9bfaf66510)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:183 +0x72
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69

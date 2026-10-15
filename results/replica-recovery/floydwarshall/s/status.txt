@@ -1,0 +1,2 @@
+sim rc=0 3s 2026/10/13 01:39:51 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/amdappsdk/floydwarshall/floydwarshall.go:300: Passed!
+ana rc=0 3s

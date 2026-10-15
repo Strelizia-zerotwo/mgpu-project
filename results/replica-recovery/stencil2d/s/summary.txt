@@ -1,0 +1,38 @@
+trace trace: 432960 records, 421888 user, 11072 non-user, 0 outside kernels; 10 epochs
+user records per GPU: [105472 105472 105472 105472]
+
+== page 4.0KB: 532 pages touched ==
+GPU page-epoch reads: hit 1854, cold 1854 (+798 write-first), refill 4753 (1 for write)
+invalidations 5549: re-read 4752, never re-read 796 (14.3%)
+write page-epochs 2659 (80.0% multi-writer); remote tx in write epochs 122165
+INV refill bytes 18.57MB
+gran           RETAIN     %INV     UPD push   UPD->never      p50  extents  dirty-fraction histogram [<=1% 1-5% 5-10% 10-25% 25-50% 50-99% 100%]
+32B           18.25MB    98.3%      22.31MB       3.19MB    98.4%      2.9    0.0   0.0   0.0   0.0   0.4  99.6   0.0 
+128B          18.53MB    99.8%      26.25MB       3.75MB   100.0%      1.0    0.0   0.0   0.0   0.0   0.4   0.0  99.6 
+512B          18.53MB    99.8%      42.00MB       6.01MB   100.0%      1.0    0.0   0.0   0.0   0.0   0.4   0.0  99.6 
+4.0KB         18.57MB   100.0%      87.20MB      12.49MB   100.0%      1.0    0.0   0.0   0.0   0.0   0.0   0.0 100.0 
+write epochs merged per repair (mean 1.00) [1 2 3-4 5-16 >16]: 100.0   0.0   0.0   0.0   0.0 
+reuse distance in epochs [1 2 3-4 5-16 >16]: 100.0   0.0   0.0   0.0   0.0 
+reads per restored replica p50 28 mean 30.2
+stale replicas retained (sum over GPUs): avg 557.2 pages, peak 797 pages (footprint 532 pages)
+
+== page 64.0KB: 34 pages touched ==
+GPU page-epoch reads: hit 112, cold 112 (+52 write-first), refill 288 (0 for write)
+invalidations 336: re-read 288, never re-read 48 (14.3%)
+write page-epochs 179 (80.4% multi-writer); remote tx in write epochs 129312
+INV refill bytes 18.00MB
+gran           RETAIN     %INV     UPD push   UPD->never      p50  extents  dirty-fraction histogram [<=1% 1-5% 5-10% 10-25% 25-50% 50-99% 100%]
+32B           17.67MB    98.2%      22.37MB       3.19MB    98.5%     31.9    0.0   0.0   0.0   0.0   0.0 100.0   0.0 
+128B          17.95MB    99.7%      26.31MB       3.75MB   100.0%      1.0    0.0   0.0   0.0   0.0   0.0   3.1  96.9 
+512B          17.95MB    99.7%      42.11MB       6.00MB   100.0%      1.0    0.0   0.0   0.0   0.0   0.0   3.1  96.9 
+4.0KB         17.96MB    99.8%      87.43MB      12.46MB   100.0%      1.0    0.0   0.0   0.0   0.0   0.0   3.1  96.9 
+write epochs merged per repair (mean 1.00) [1 2 3-4 5-16 >16]: 100.0   0.0   0.0   0.0   0.0 
+reuse distance in epochs [1 2 3-4 5-16 >16]: 100.0   0.0   0.0   0.0   0.0 
+reads per restored replica p50 490 mean 486.6
+stale replicas retained (sum over GPUs): avg 33.6 pages, peak 57 pages (footprint 34 pages)
+
+== page 2.00MB: 2 pages touched ==
+GPU page-epoch reads: hit 0, cold 0 (+4 write-first), refill 0 (0 for write)
+invalidations 0: re-read 0, never re-read 0 (0.0%)
+write page-epochs 19 (84.2% multi-writer); remote tx in write epochs 316356
+no refills

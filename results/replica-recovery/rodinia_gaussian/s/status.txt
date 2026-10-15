@@ -1,0 +1,2 @@
+sim rc=2 1s panic: the rodinia gaussian benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+ana rc=0 1s

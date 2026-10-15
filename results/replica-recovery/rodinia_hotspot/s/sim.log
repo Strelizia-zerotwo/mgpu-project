@@ -1,0 +1,13 @@
+Monitoring simulation with http://localhost:32782
+2026/10/13 01:39:49 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/hotspot/hotspot.go:118: the rodinia hotspot benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+panic: the rodinia hotspot benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+
+goroutine 68 [running]:
+log.Panic({0x166c619a7768?, 0x166c619a7778?, 0x42533f?})
+	/usr/local/go/src/log/log.go:451 +0x6e
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/rodinia/hotspot.(*Benchmark).Run(0x166c61a9e0b0)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/rodinia/hotspot/hotspot.go:118 +0x47
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17bffa8, 0x166c61a9e0b0}, 0x166c61a16020)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:180 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69

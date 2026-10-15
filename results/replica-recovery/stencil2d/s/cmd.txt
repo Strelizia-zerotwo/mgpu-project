@@ -1,0 +1,1 @@
+stencil2d -row=512 -col=512 -iter=8

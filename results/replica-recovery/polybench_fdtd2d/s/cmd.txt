@@ -1,0 +1,1 @@
+polybench_fdtd2d -size=512 -tmax=8

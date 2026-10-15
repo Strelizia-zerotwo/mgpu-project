@@ -1,0 +1,13 @@
+Monitoring simulation with http://localhost:32779
+2026/10/13 01:39:50 /home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/polybench/gramschmidt/gramschmidt.go:145: the polybench gramschmidt benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+panic: the polybench gramschmidt benchmark ships only a gfx942 kernel; run with -arch cdna3 -gpu mi300x
+
+goroutine 83 [running]:
+log.Panic({0x35eb74dd768?, 0x35eb74dd778?, 0x42533f?})
+	/usr/local/go/src/log/log.go:451 +0x6e
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/polybench/gramschmidt.(*Benchmark).Run(0x35eb7716820)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/benchmarks/polybench/gramschmidt/gramschmidt.go:145 +0x47
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17c14a0, 0x35eb7716820}, 0x35eb74141c0)
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:180 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpu-project/external/mgpusim/amd/samples/runner/runner.go:173 +0x69
